@@ -54,12 +54,12 @@
 
         symbol {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans  &trans      &trans  &trans          &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-                        &trans                                      &trans
+&trans  &trans  &trans  &kp LS(LT)    &kp LS(GT)    &trans      &trans  &kp LS(AT)     &kp SEMI      &kp LS(COLON)  &kp SQT        &kp LS(DQT)
+&trans  &trans  &trans  &kp LS(LPAR)  &kp LS(RPAR)  &trans      &trans  &kp LS(QMARK)  &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &trans
+&trans  &trans  &trans  &kp LBKT      &kp RBKT      &trans      &trans  &trans         &trans        &trans         &trans         &trans
+&trans  &trans  &trans                &trans        &trans      &trans  &trans                       &trans         &trans         &trans
+&trans  &trans  &trans  &trans        &trans                            &trans         &trans        &trans         &trans         &trans
+                        &trans                                                         &trans
             >;
 
             label = "symb";
