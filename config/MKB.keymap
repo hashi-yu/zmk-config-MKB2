@@ -1,6 +1,6 @@
 // #include <layout_shift.dtsi>
-#include <input/processors.dtsi>
 
+#include <input/processors.dtsi>
 #include <layout_shift_kp_override.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -14,9 +14,7 @@
 #define SCROLL 4
 #define BT 5
 
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 3 2000>;
-};
+&mkp_input_listener { input-processors = <&zip_temp_layer 3 2000>; };
 
 &mt {
     flavor = "balanced";
@@ -74,12 +72,12 @@
         mouse_layer {
             label = "Mouse";
             bindings = <
-&trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans    &trans     &trans     &trans     &trans
-&trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans    &mkp LCLK  &mkp RCLK  &trans     &trans
-&trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans    &trans     &trans     &trans     &trans
-&trans    &trans  &trans               &trans     &trans      &trans  &trans               &trans     &trans     &trans
-&kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                      &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
-                             &kp A                                              &kp B
+&trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans     &trans     &trans     &trans     &trans
+&trans    &trans  &trans     &trans    &trans     &trans      &trans  &mkp LCLK  &mkp RCLK  &trans     &trans     &trans
+&trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans     &trans     &trans     &trans     &trans
+&trans    &trans  &trans               &trans     &trans      &trans  &trans                &trans     &trans     &trans
+&kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                      &kp HOME   &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
+                             &kp A                                               &kp B
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
