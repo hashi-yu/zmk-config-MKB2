@@ -1,4 +1,5 @@
 // #include <layout_shift.dtsi>
+#include <input/processors.dtsi>
 
 #include <layout_shift_kp_override.dtsi>
 #include <behaviors.dtsi>
@@ -12,6 +13,10 @@
 #define MOUSE 3
 #define SCROLL 4
 #define BT 5
+
+&mkp_input_listener {
+    input-processors = <&zip_temp_layer 3 2000>;
+};
 
 &mt {
     flavor = "balanced";

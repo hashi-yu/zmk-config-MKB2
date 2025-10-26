@@ -1,3 +1,5 @@
+#include <input/processors.dtsi>
+
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
@@ -54,9 +56,26 @@
         };
     };
 
+&zip_temp_layer {
+    require-prior-idle-ms = <200>;
+
+    excluded-positions = <
+        19 // J
+        20 // K
+        24 // Lshift
+        36 // contrl
+        37 // optn
+        38 // cmd
+        43 // cmd
+        44 // optn
+        45 // contro
+};
+
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&trackball_split>;
+
+        input-processors = <&zip_temp_layer 3 10000>;
     };
 };
