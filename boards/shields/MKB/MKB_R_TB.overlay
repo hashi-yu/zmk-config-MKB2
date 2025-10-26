@@ -42,7 +42,21 @@
     };
 };
 
-
+&zip_temp_layer {
+    excluded-positions = <
+        19 // J
+        20 // K
+        24 // Lshift
+        36 // contrl
+        37 // optn
+        38 // cmd
+        43 // cmd
+        44 // optn
+        45 // contro
+    >;
+    
+    require-prior-idle-ms = <400>;
+};
 
 /*input-split*/
 / {
@@ -58,21 +72,7 @@
         };
     };
 
-    &zip_temp_layer {
-        excluded-positions = <
-            19 // J
-            20 // K
-            24 // Lshift
-            36 // contrl
-            37 // optn
-            38 // cmd
-            43 // cmd
-            44 // optn
-            45 // contro
-        >;
-        
-        require-prior-idle-ms = <400>;
-    };
+
 
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
