@@ -42,6 +42,7 @@
     };
 };
 
+
 /*input-split*/
 / {
     split_inputs {
@@ -56,6 +57,9 @@
         };
     };
 
+    &zip_temp_layer {
+    require-prior-idle-ms = <400>;
+
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         status = "okay";
@@ -63,9 +67,6 @@
         input-processors = <&zip_temp_layer 3 10000>;
     };
 };
-
-&zip_temp_layer {
-    require-prior-idle-ms = <400>;
 
     excluded-positions = <
         19 // J
