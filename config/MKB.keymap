@@ -41,11 +41,11 @@
         num_layer {
             label = "Num";
             bindings = <
-&trans    &trans  &kp N1     &kp N2    &kp N3     &trans       &trans  &kp EQUAL     &kp LS(PRCNT)  &kp LS(LG(N9))  &trans     &trans
-&trans    &trans  &kp N4     &kp N5    &kp N6     &kp N0       &trans  &kp LS(PLUS)  &kp MINUS      &kp LS(STAR)    &kp FSLH   &trans
-&trans    &trans  &kp N7     &kp N8    &kp N9     &kp DOT      &trans  &trans        &trans         &trans          &trans     &trans
-&trans    &trans  &trans               &trans     &trans       &trans  &trans                       &trans          &trans     &trans
-&kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                       &kp HOME      &kp PG_UP      &kp ENTER       &kp PG_DN  &kp END
+&trans    &trans  &kp N1     &kp N2    &kp N3     &trans       &trans  &kp EQUAL     &kp LA(N8)  &kp LA(LS(N8))  &kp PERCENT  &trans
+&trans    &trans  &kp N4     &kp N5    &kp N6     &kp N0       &trans  &kp LS(PLUS)  &kp MINUS   &kp LS(STAR)    &kp FSLH     &trans
+&trans    &trans  &kp N7     &kp N8    &kp N9     &kp DOT      &trans  &trans        &trans      &trans          &trans       &trans
+&trans    &trans  &trans               &trans     &trans       &trans  &trans                    &trans          &trans       &trans
+&kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                       &kp HOME      &kp PG_UP   &kp ENTER       &kp PG_DN    &kp END
                              &kp A                                                   &kp B
             >;
 
