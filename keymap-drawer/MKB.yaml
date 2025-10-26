@@ -68,9 +68,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - EQUAL
-  - Sft+PRCNT
-  - Sft+Gui+9
-  - {t: ▽, type: trans}
+  - Alt+8
+  - Alt+Sft+8
+  - PERCENT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
