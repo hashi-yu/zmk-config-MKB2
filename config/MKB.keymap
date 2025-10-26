@@ -28,9 +28,9 @@
             label = "Def";
             bindings = <
 &kp ESC    &kp Q     &kp W      &kp E     &kp R      &kp T                &kp Y        &kp U      &kp I      &kp O      &kp P      &kp BSPC
-&kp TAB    &kp A     &kp S      &kp D     &kp F      &kp G                &kp H        &kp J      &kp K      &kp L      &kp SEMI   &lt 6 SQT
+&kp TAB    &kp A     &kp S      &kp D     &kp F      &kp G                &kp H        &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
 &kp LSHFT  &kp Z     &kp X      &kp C     &kp V      &kp B                &kp N        &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT
-&kp LCTRL  &kp LALT  &kp LGUI             &kp SPACE  &lt 1 BACKSPACE      &lt 3 ENTER  &kp SPACE             &kp LGUI   &kp LALT   &kp LCTRL
+&kp LCTRL  &kp LALT  &kp LGUI             &kp SPACE  &lt 1 BACKSPACE      &lt 2 ENTER  &kp SPACE             &kp LGUI   &kp LALT   &kp LCTRL
 &kp LEFT   &kp UP    &kp SPACE  &kp DOWN  &kp RIGHT                                    &kp HOME   &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
                                 &kp F                                                             &kp J
             >;
@@ -66,34 +66,6 @@
             sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
-        function_layer {
-            label = "Fnc";
-            bindings = <
-&kp GRAVE  &kp PG_UP  &kp UP     &kp PG_DN  &kp HOME   &trans         &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &trans
-&tog_ls    &kp LEFT   &kp DOWN   &kp RIGHT  &kp END    &trans         &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &trans
-&trans     &kp BKSP   &kp DEL    &trans     &trans     &trans         &kp F11    &kp F12    &trans     &trans     &trans     &trans
-&trans     &trans     &kp LALT              &kp ENTER  &kp ENTER      &kp ENTER  &kp ENTER             &trans     &trans     &trans
-&kp LEFT   &kp UP     &kp SPACE  &kp DOWN   &kp RIGHT                            &kp HOME   &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
-                                 &kp A                                                      &kp B
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-        };
-
-        bt_layer {
-            label = "BT";
-            bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &bt BT_CLR_ALL  &trans    &trans     &trans     &trans     &trans
-&trans      &trans        &trans        &trans        &trans        &trans            &trans          &trans    &trans     &trans     &trans     &trans
-&trans      &trans        &trans        &trans        &trans        &trans            &trans          &trans    &trans     &trans     &trans     &trans
-&trans      &trans        &trans                      &trans        &trans            &trans          &trans               &trans     &trans     &trans
-&kp LEFT    &kp UP        &kp SPACE     &kp DOWN      &kp RIGHT                                       &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
-                                        &kp A                                                                   &kp B
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-        };
-
         mouse_layer {
             label = "Mouse";
             bindings = <
@@ -117,6 +89,34 @@
 &trans    &trans  &trans               &trans     &trans      &trans  &trans               &trans     &trans     &trans
 &kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                      &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
                              &kp A                                              &kp B
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+
+        function_layer {
+            label = "Fnc";
+            bindings = <
+&kp GRAVE  &kp PG_UP  &kp UP     &kp PG_DN  &kp HOME   &trans         &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &trans
+&tog_ls    &kp LEFT   &kp DOWN   &kp RIGHT  &kp END    &trans         &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &trans
+&trans     &kp BKSP   &kp DEL    &trans     &trans     &trans         &kp F11    &kp F12    &trans     &trans     &trans     &trans
+&trans     &trans     &kp LALT              &kp ENTER  &kp ENTER      &kp ENTER  &kp ENTER             &trans     &trans     &trans
+&kp LEFT   &kp UP     &kp SPACE  &kp DOWN   &kp RIGHT                            &kp HOME   &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
+                                 &kp A                                                      &kp B
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+
+        bt_layer {
+            label = "BT";
+            bindings = <
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &bt BT_CLR_ALL  &trans    &trans     &trans     &trans     &trans
+&trans      &trans        &trans        &trans        &trans        &trans            &trans          &trans    &trans     &trans     &trans     &trans
+&trans      &trans        &trans        &trans        &trans        &trans            &trans          &trans    &trans     &trans     &trans     &trans
+&trans      &trans        &trans                      &trans        &trans            &trans          &trans               &trans     &trans     &trans
+&kp LEFT    &kp UP        &kp SPACE     &kp DOWN      &kp RIGHT                                       &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
+                                        &kp A                                                                   &kp B
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
