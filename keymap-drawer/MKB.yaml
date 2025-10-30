@@ -15,16 +15,16 @@ layers:
   - BSPC
   - TAB
   - A
-  - S
-  - D
-  - F
+  - {t: S, h: LCTRL}
+  - {t: D, h: LALT}
+  - {t: F, h: LEFT SHIFT}
   - G
   - H
-  - J
-  - K
-  - L
+  - {t: J, h: RIGHT SHIFT}
+  - {t: K, h: LEFT ALT}
+  - {t: L, h: RCTRL}
   - SEMI
-  - SQT
+  - ENTER
   - LSHFT
   - Z
   - X
@@ -41,20 +41,20 @@ layers:
   - LALT
   - LGUI
   - SPACE
-  - {t: BACKSPACE, h: Num}
-  - {t: ENTER, h: symb}
+  - {t: LANGUAGE 2, h: Num}
+  - {t: LANG1, h: symb}
   - SPACE
   - LGUI
   - LALT
   - LCTRL
   - LEFT
   - UP
-  - SPACE
+  - {t: ▽, type: trans}
   - DOWN
   - RIGHT
   - HOME
   - PG UP
-  - ENTER
+  - {t: ▽, type: trans}
   - PG DN
   - END
   - F
