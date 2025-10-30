@@ -17,8 +17,8 @@
 &mkp_input_listener { input-processors = <&zip_temp_layer 3 2000>; };
 
 &mt {
-    flavor = "balanced";
-    tapping-term-ms = <280>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <500>;
     quick-tap-ms = <175>;
     require-prior-idle-ms = <150>;
 };
