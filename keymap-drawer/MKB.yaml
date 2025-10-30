@@ -14,16 +14,16 @@ layers:
   - P
   - BSPC
   - TAB
-  - A
-  - {t: S, h: LCTRL}
-  - {t: D, h: LALT}
-  - {t: F, h: LEFT SHIFT}
+  - {t: A, h: LCTRL}
+  - {t: S, h: LALT}
+  - {t: D, h: LEFT SHIFT}
+  - {t: F, h: LEFT GUI}
   - G
   - H
-  - {t: J, h: RIGHT SHIFT}
-  - {t: K, h: LEFT ALT}
-  - {t: L, h: RCTRL}
-  - SEMI
+  - {t: J, h: RIGHT GUI}
+  - {t: K, h: RIGHT SHIFT}
+  - {t: L, h: LALT}
+  - {t: SEMICOLON, h: RCTRL}
   - ENTER
   - LSHFT
   - Z
