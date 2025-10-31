@@ -1,6 +1,8 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
 #include <behaviors/rgbled_widget.dtsi>
+#include <input/processors.dtsi>
+
 
 / {
 	chosen {
@@ -134,4 +136,20 @@
       compatible = "zmk,keymap-sensors";
       sensors = <&left_encoder &right_encoder>;
    };
+}
+
+&zip_temp_layer {
+    excluded-positions = <
+        19 // J
+        20 // K
+        24 // Lshift
+        36 // contrl
+        37 // optn
+        38 // cmd
+        43 // cmd
+        44 // optn
+        45 // contro
+    >;
+
+    require-prior-idle-ms = <400>;
 };
