@@ -151,5 +151,5 @@
         45 // contro
     >;
 
-    require-prior-idle-ms = <400>;
+    require-prior-idle-ms = <250>;
 };

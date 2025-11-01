@@ -14,11 +14,11 @@
 #define SCROLL 4
 #define BT 5
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 3 2000>; };
+&mkp_input_listener { input-processors = <&zip_temp_layer 3 1000>; };
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <300>;
+    tapping-term-ms = <200>;
     quick-tap-ms = <175>;
     require-prior-idle-ms = <150>;
 };
@@ -26,7 +26,6 @@
 / {
     keymap {
         compatible = "zmk,keymap";
-
         default_layer {
             label = "Def";
             bindings = <
