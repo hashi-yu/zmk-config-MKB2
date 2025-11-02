@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - BSPC
+  - '&mkp MB5'
   - TAB
   - {t: A, h: LCTRL}
   - {t: S, h: LALT}
@@ -24,7 +24,7 @@ layers:
   - {t: K, h: RIGHT SHIFT}
   - {t: L, h: LALT}
   - {t: SEMICOLON, h: RCTRL}
-  - ENTER
+  - '&mkp MB4'
   - LSHFT
   - Z
   - X
@@ -36,7 +36,7 @@ layers:
   - COMMA
   - DOT
   - FSLH
-  - RSHFT
+  - '&mkp MB3'
   - LCTRL
   - LALT
   - LGUI
