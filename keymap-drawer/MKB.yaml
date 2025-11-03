@@ -344,7 +344,7 @@ layers:
   - {t: ▽, type: trans}
   - LEFT
   - UP
-  - SPACE
+  - {t: ▽, type: trans}
   - DOWN
   - RIGHT
   - HOME
