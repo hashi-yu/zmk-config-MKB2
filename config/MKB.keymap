@@ -45,6 +45,8 @@
             label = "PLUSMINUS";
             #binding-cells = <0>;
             bindings = <&kp PLUS>, <&kp MINUS>, <&kp ASTERISK>, <&kp SLASH>;
+
+            tapping-term-ms = <300>;
         };
 
         symbol_lt: symbol_lt {
