@@ -42,7 +42,7 @@ layers:
   - LGUI
   - {t: SPACE, h: Num}
   - {t: BACKSPACE, h: Mouse}
-  - {t: SPACE, h: arrow}
+  - {t: RET, h: arrow}
   - {t: SPACE, h: symb}
   - LGUI
   - LALT
@@ -128,7 +128,7 @@ layers:
   - {t: ▽, type: trans}
   - '&mkp MB4'
   - '&mkp MB5'
-  - {t: ▽, type: trans}
+  - Gui+C
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -140,7 +140,7 @@ layers:
   - {t: ▽, type: trans}
   - '&mkp LCLK'
   - '&mkp RCLK'
-  - {t: ▽, type: trans}
+  - Gui+V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
