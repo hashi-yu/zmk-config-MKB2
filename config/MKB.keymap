@@ -73,7 +73,7 @@
                 <&macro_wait_time 100>,
                 <&kp LS(LA(N8))>,
                 <&macro_wait_time 100>,
-                <&kp C>;
+                <&kp LS(C)>;
 
             label = "DEG";
         };
@@ -115,6 +115,13 @@
                 <&kp LEFT>;
 
             label = "KAKKO3";
+        };
+
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG2 &num_lt 1 SPACE>;
+            label = "NEW_MACRO";
         };
     };
 
