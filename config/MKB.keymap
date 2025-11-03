@@ -103,6 +103,19 @@
 
             label = "KAKKO3";
         };
+
+        kakko2: kakko2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LESS_THAN>,
+                <&macro_wait_time 50>,
+                <&kp GREATER_THAN>,
+                <&macro_wait_time 100>,
+                <&kp LEFT>;
+
+            label = "KAKKO2";
+        };
     };
 
     keymap {
