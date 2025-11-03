@@ -41,9 +41,9 @@ layers:
   - LALT
   - LGUI
   - {t: SPACE, h: Num}
-  - {t: BACKSPACE, h: arrow}
+  - {t: BACKSPACE, h: symb}
   - {t: RET, h: blank}
-  - {t: SPACE, h: symb}
+  - {t: SPACE, h: arrow}
   - LGUI
   - LALT
   - LCTRL
@@ -159,9 +159,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -180,15 +180,20 @@ layers:
   arrow:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - HOME
-  - UP
-  - END
-  - PG UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
   - UP
   - END
   - PG UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -197,10 +202,7 @@ layers:
   - RIGHT
   - PG DN
   - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - RIGHT
-  - PG DN
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -219,8 +221,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
