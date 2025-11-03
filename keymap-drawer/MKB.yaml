@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - '&mkp MB5'
+  - Meh+F
   - TAB
   - {t: A, h: LCTRL}
   - {t: S, h: LALT}
@@ -24,7 +24,7 @@ layers:
   - {t: K, h: RIGHT SHIFT}
   - {t: L, h: LALT}
   - {t: SEMICOLON, h: RCTRL}
-  - '&mkp MB4'
+  - F3
   - LSHFT
   - Z
   - X
@@ -36,14 +36,14 @@ layers:
   - COMMA
   - DOT
   - FSLH
-  - '&mkp MB3'
+  - RIGHT SHIFT
   - LCTRL
   - LALT
   - LGUI
   - {t: SPACE, h: Num}
   - {t: BACKSPACE, h: Mouse}
-  - {t: ENTER, h: symb}
-  - SPACE
+  - {t: SPACE, h: arrow}
+  - {t: SPACE, h: symb}
   - LGUI
   - LALT
   - LCTRL
@@ -102,7 +102,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: LANGUAGE 2, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -181,7 +181,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - UP
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -192,9 +192,9 @@ layers:
   - Sft+DQT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Sft+QMARK
@@ -219,8 +219,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -239,16 +239,10 @@ layers:
   arrow:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - HOME
   - UP
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - END
+  - PG UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -260,6 +254,7 @@ layers:
   - LEFT
   - DOWN
   - RIGHT
+  - PG DN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -279,6 +274,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
