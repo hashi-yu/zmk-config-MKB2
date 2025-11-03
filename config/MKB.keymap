@@ -66,28 +66,54 @@
         deg: deg {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(N8)) &kp C>;
+            bindings =
+                <&kp LANG1>,
+                <&macro_wait_time 50>,
+                <&kp SPACE>,
+                <&macro_wait_time 100>,
+                <&kp LS(LA(N8))>,
+                <&macro_wait_time 100>,
+                <&kp C>;
+
             label = "DEG";
         };
 
         kakko1: kakko1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            bindings =
+                <&kp LEFT_PARENTHESIS>,
+                <&macro_wait_time 50>,
+                <&kp RIGHT_PARENTHESIS>,
+                <&macro_wait_time 100>,
+                <&kp LEFT>;
+
             label = "KAKKO1";
         };
 
         kakko2: kakko2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT>;
+            bindings =
+                <&kp LESS_THAN>,
+                <&macro_wait_time 50>,
+                <&kp GREATER_THAN>,
+                <&macro_wait_time 100>,
+                <&kp LEFT>;
+
             label = "KAKKO2";
         };
 
         kakko3: kakko3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            bindings =
+                <&kp LEFT_BRACKET>,
+                <&macro_wait_time 50>,
+                <&kp RIGHT_BRACKET>,
+                <&macro_wait_time 100>,
+                <&kp LEFT>;
+
             label = "KAKKO3";
         };
     };
