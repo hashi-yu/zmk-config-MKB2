@@ -23,19 +23,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        lck {
-            bindings = <&mkp LCLK>;
-            key-positions = <20 19>;
-        };
-
-        rck {
-            bindings = <&mkp RCLK>;
-            key-positions = <20 21>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         num_lt: num_lt {
