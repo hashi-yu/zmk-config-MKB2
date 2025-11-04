@@ -394,8 +394,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -413,3 +413,8 @@ layers:
   - END
   - A
   - B
+combos:
+- p: [20, 19]
+  k: '&mkp LCLK'
+- p: [20, 21]
+  k: '&mkp RCLK'
