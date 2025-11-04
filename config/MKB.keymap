@@ -139,7 +139,7 @@
 &kp ESC    &kp Q        &kp W       &kp E             &kp R            &kp T                &kp Y      &kp U               &kp I              &kp O       &kp P                &kp LS(LA(LC(F)))
 &kp TAB    &mt LCTRL A  &mt LALT S  &mt LEFT_SHIFT D  &mt LEFT_GUI F   &kp G                &kp H      &mt RIGHT_GUI J     &mt RIGHT_SHIFT K  &mt LALT L  &mt RCTRL SEMICOLON  &kp F3
 &kp LSHFT  &kp Z        &kp X       &kp C             &kp V            &kp B                &kp N      &kp M               &kp COMMA          &kp DOT     &kp FSLH             &kp RIGHT_SHIFT
-&kp LCTRL  &kp LALT     &kp LGUI                      &num_lt 1 SPACE  &lt 2 BACKSPACE      &lt 4 RET  &symbol_lt 3 SPACE                     &kp LGUI    &kp LALT             &kp LCTRL
+&kp LCTRL  &kp LALT     &kp LGUI                      &num_lt 1 SPACE  &lt 2 BACKSPACE      &lt 6 RET  &symbol_lt 3 SPACE                     &kp LGUI    &kp LALT             &kp LCTRL
 &kp LEFT   &kp UP       &trans      &kp DOWN          &kp RIGHT                                        &kp HOME            &kp PG_UP          &trans      &kp PG_DN            &kp END
                                     &kp F                                                                                  &kp J
             >;
@@ -161,14 +161,14 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        symbol_mouse {
+        symbol {
             bindings = <
-&trans  &kp SQT        &kp LS(COLON)  &kp SEMI      &kp LS(AT)     &trans      &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &kp LS(POUND)  &kp LS(AT)     &kp LS(EXCL)  &kp LS(QMARK)  &trans      &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
-&trans  &kp FSLH       &kakko3        &kakko2       &kakko1        &trans      &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans         &trans                       &trans         &trans      &trans  &trans                &trans  &trans  &trans
-&trans  &trans         &trans         &trans        &trans                             &trans     &trans     &trans  &trans  &trans
-                                      &trans                                                      &trans
+&trans  &kp SQT        &kp LS(COLON)  &kp SEMI      &kp LS(AT)     &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(POUND)  &kp LS(AT)     &kp LS(EXCL)  &kp LS(QMARK)  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp FSLH       &kakko3        &kakko2       &kakko1        &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans                       &trans         &trans      &trans  &trans          &trans  &trans  &trans
+&trans  &trans         &trans         &trans        &trans                             &trans  &trans  &trans  &trans  &trans
+                                      &trans                                                   &trans
             >;
 
             label = "symb";
@@ -188,7 +188,7 @@
 
         blank {
             bindings = <
-&trans  &trans  &kp F1  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans          &trans  &trans      &trans  &trans          &trans  &trans  &trans
@@ -214,8 +214,8 @@
         mouse_layer {
             label = "Mouse";
             bindings = <
-&trans    &trans  &trans     &trans    &trans     &trans      &trans  &mkp MB4   &mkp MB5   &kp LG(C)  &trans     &trans
-&trans    &trans  &trans     &trans    &trans     &trans      &trans  &mkp LCLK  &mkp RCLK  &kp LG(V)  &trans     &trans
+&trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans     &trans     &trans     &trans     &trans
+&trans    &trans  &trans     &trans    &trans     &trans      &trans  &mkp LCLK  &mkp RCLK  &trans     &trans     &trans
 &trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans     &trans     &trans     &trans     &trans
 &trans    &trans  &trans               &trans     &trans      &trans  &trans                &trans     &trans     &trans
 &kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                      &kp HOME   &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
