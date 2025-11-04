@@ -138,11 +138,13 @@
    };
 };
 
-// &zip_temp_layer {
-//     excluded-positions = <
-//         19 // J
-//         20 // K
-//     >;
-// 
-//     require-prior-idle-ms = <250>;
-// };
+&zip_temp_layer {
+    excluded-positions = <
+         7 // U
+         8 // I
+        19 // J
+        20 // K
+    >;
+
+    require-prior-idle-ms = <250>;
+};
