@@ -101,7 +101,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - INT4
   - {t: LANG1, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -218,7 +218,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LANGUAGE 2
-  - {t: ▽, type: trans}
+  - INT5
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -239,7 +239,7 @@ layers:
   blank:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F1
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
