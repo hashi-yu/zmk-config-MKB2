@@ -47,7 +47,9 @@
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&trackball_split>;
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT|INPUT_TRANSFORM_Y_INVERT)>, <&zip_temp_layer 6 3000>;
+        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT|INPUT_TRANSFORM_Y_INVERT)>;
+        
+        // <&zip_temp_layer 6 3000>; // 一旦オートマウスレイヤー無効化
 
         scroll {
             layers = <1>;
