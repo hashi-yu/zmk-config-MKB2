@@ -102,7 +102,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - INT4
-  - {t: LANG1, h: toggle}
+  - LANG1
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
