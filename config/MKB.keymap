@@ -23,7 +23,19 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        lck {
+            bindings = <&mkp LCLK>;
+            key-positions = <20 19>;
+        };
+
+        rck {
+            bindings = <&mkp RCLK>;
+            key-positions = <20 21>;
+        };
+    };
 
     behaviors {
         num_lt: num_lt {
@@ -214,12 +226,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        mouse_layer_1and2 {
-            if-layers = <1 2>;
-            then-layer = <6>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
