@@ -181,11 +181,11 @@
 
         symbol {
             bindings = <
-&trans  &kp SQT        &kp LS(COLON)  &kp SEMI      &kp LS(AT)     &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(POUND)  &kp LS(AT)     &kp LS(EXCL)  &kp LS(QMARK)  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp FSLH       &kakko3        &kakko2       &kakko1        &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &trans                       &trans         &trans      &trans  &trans          &trans  &trans  &trans
-&trans  &trans         &trans         &trans        &trans                             &trans  &trans  &trans  &trans  &trans
+&trans  &kp SQT        &kp LS(COLON)  &kp SEMI      &kp LS(AT)     &trans      &trans  &trans  &trans  &uppersmall  &trans  &trans
+&trans  &kp LS(POUND)  &kp LS(AT)     &kp LS(EXCL)  &kp LS(QMARK)  &trans      &trans  &trans  &trans  &lawersmall  &trans  &trans
+&trans  &kp FSLH       &kakko3        &kakko2       &kakko1        &trans      &trans  &trans  &trans  &trans       &trans  &trans
+&trans  &trans         &trans                       &trans         &trans      &trans  &trans          &trans       &trans  &trans
+&trans  &trans         &trans         &trans        &trans                             &trans  &trans  &trans       &trans  &trans
                                       &trans                                                   &trans
             >;
 
