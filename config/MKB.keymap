@@ -125,7 +125,9 @@
                 <&macro_wait_time 50>,
                 <&kp LS(LG(MINUS))>,
                 <&macro_wait_time 50>,
-                <&kp RIGHT>;
+                <&kp RIGHT>,
+                <&macro_wait_time 50>,
+                <&kp LC(SPACE)>;
 
             label = "LAWERSMALL";
         };
@@ -138,7 +140,9 @@
                 <&macro_wait_time 50>,
                 <&kp LG(LS(EQUAL))>,
                 <&macro_wait_time 50>,
-                <&kp RIGHT>;
+                <&kp RIGHT>,
+                <&macro_wait_time 50>,
+                <&kp LC(SPACE)>;
 
             label = "UPPERSMALL";
         };
