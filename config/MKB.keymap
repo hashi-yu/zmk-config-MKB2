@@ -116,6 +116,36 @@
 
             label = "KAKKO2";
         };
+
+        lawersmall: lawersmall {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LS(LEFT)>,
+                <&macro_wait_time 50>,
+                <&kp LS(LG(MINUS))>,
+                <&macro_wait_time 50>,
+                <&kp RIGHT>,
+                <&macro_wait_time 50>,
+                <&kp LS(LG(MINUS))>;
+
+            label = "LAWERSMALL";
+        };
+
+        uppersmall: uppersmall {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LS(LEFT)>,
+                <&macro_wait_time 50>,
+                <&kp LG(LS(EQUAL))>,
+                <&macro_wait_time 50>,
+                <&kp RIGHT>,
+                <&macro_wait_time 50>,
+                <&kp LS(LG(EQUAL))>;
+
+            label = "UPPERSMALL";
+        };
     };
 
     keymap {
