@@ -413,7 +413,3 @@ layers:
   - END
   - A
   - B
-combos:
-- p: [32, 31]
-  k: '&mkp MB3'
-  l: [Def]
