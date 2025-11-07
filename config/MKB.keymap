@@ -23,15 +23,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        MB3 {
-            bindings = <&mkp MB3>;
-            key-positions = <32 31>;
-            layers = <0>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         num_lt: num_lt {
