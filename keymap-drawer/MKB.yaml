@@ -40,7 +40,7 @@ layers:
   - LCTRL
   - LALT
   - LGUI
-  - {t: SPACE, h: Num}
+  - {t: SPACE, h: '&num_macro'}
   - {t: BACKSPACE, h: symb}
   - {t: RET, h: Mouse}
   - {t: SPACE, h: arrow}
@@ -99,7 +99,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - INT4
   - LANG1
