@@ -146,5 +146,5 @@
         20 // K
     >;
 
-    require-prior-idle-ms = <250>;
+    require-prior-idle-ms = <1000>;
 };
