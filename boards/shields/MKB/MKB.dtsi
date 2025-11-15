@@ -138,11 +138,11 @@
    };
 };
 
-&zip_temp_layer {
-    excluded-positions = <
-         7 // U
-         8 // I
-    >;
-
-    require-prior-idle-ms = <300>;
-};
+// &zip_temp_layer {
+//     excluded-positions = <
+//          7 // U
+//          8 // I
+//     >;
+// 
+//     require-prior-idle-ms = <300>;
+// };
