@@ -42,7 +42,7 @@ layers:
   - LGUI
   - {t: SPACE, h: Mouse}
   - {t: BACKSPACE, h: Num}
-  - {t: RET, h: Mouse}
+  - {t: RET, h: symb}
   - {t: SPACE, h: arrow}
   - LGUI
   - LALT
@@ -278,7 +278,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
