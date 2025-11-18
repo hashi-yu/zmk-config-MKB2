@@ -50,8 +50,8 @@ layers:
   - '&mkp LCLK'
   - '&mkp LCLK'
   - {t: ▽, type: trans}
-  - '&mkp LCLK'
-  - '&mkp RCLK'
+  - '&triple_click'
+  - '&double_click'
   - HOME
   - PG UP
   - {t: ▽, type: trans}
