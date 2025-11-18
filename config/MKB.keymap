@@ -195,23 +195,23 @@
 
         arrow {
             bindings = <
-&trans  &trans  &trans  &trans  &trans          &trans             &trans  &kp HOME  &kp UP    &kp END    &kp PG_UP  &trans
-&trans  &trans  &trans  &trans  &trans          &trans             &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans
-&trans  &trans  &trans  &trans  &trans          &trans             &trans  &trans    &trans    &trans     &trans     &trans
-&trans  &trans  &trans          &kp LANGUAGE_2  &kp LA(SPACE)      &trans  &trans              &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans                                     &trans    &trans    &trans     &trans     &trans
-                        &trans                                                       &trans
+&trans    &trans  &trans  &trans    &trans          &trans             &trans  &kp HOME  &kp UP    &kp END    &kp PG_UP  &trans
+&trans    &trans  &trans  &trans    &trans          &trans             &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans
+&trans    &trans  &trans  &trans    &trans          &trans             &trans  &trans    &trans    &trans     &trans     &trans
+&trans    &trans  &trans            &kp LANGUAGE_2  &kp LA(SPACE)      &trans  &trans              &trans     &trans     &trans
+&kp LEFT  &kp UP  &trans  &kp DOWN  &kp RIGHT                                  &trans    &trans    &trans     &trans     &trans
+                          &trans                                                         &trans
             >;
         };
 
         blank {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans  &trans      &trans  &trans          &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-                        &trans                                      &trans
+&trans        &trans      &trans  &trans        &trans               &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans      &trans  &trans        &trans               &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans      &trans  &trans        &trans               &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans      &trans                &trans               &trans      &trans  &trans          &trans  &trans  &trans
+&kp LG(LEFT)  &kp LG(UP)  &trans  &kp LG(DOWN)  &kp LG(RIGHT_ARROW)                      &trans  &trans  &trans  &trans  &trans
+                                  &trans                                                         &trans
             >;
         };
 
