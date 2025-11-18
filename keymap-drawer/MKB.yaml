@@ -101,7 +101,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - INT4
+  - Gui+SPACE
   - LANG1
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
