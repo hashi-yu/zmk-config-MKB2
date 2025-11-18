@@ -179,7 +179,7 @@
 &kp TAB    &mt LCTRL A  &mt LALT S  &mt LEFT_SHIFT D  &mt LEFT_GUI F      &kp G                &kp H      &mt RIGHT_GUI J    &mt RIGHT_SHIFT K  &mt LALT L  &mt RCTRL SEMICOLON  &kp F3
 &kp LSHFT  &kp Z        &kp X       &kp C             &kp V               &kp B                &kp N      &kp M              &kp COMMA          &kp DOT     &kp FSLH             &kp RIGHT_SHIFT
 &kp LCTRL  &kp LALT     &kp LGUI                      &num_mouse 1 SPACE  &lt 2 BACKSPACE      &lt 4 RET  &arrow_lt 3 SPACE                     &kp LGUI    &kp LALT             &kp LCTRL
-&mkp LCLK  &mkp LCLK    &trans      &double_click     &mkp LCLK                                           &kp HOME           &kp PG_UP          &trans      &kp PG_DN            &kp END
+&mkp LCLK  &mkp LCLK    &trans      &mkp RCLK         &mkp LCLK                                           &kp HOME           &kp PG_UP          &trans      &kp PG_DN            &kp END
                                     &kp F                                                                                    &kp J
             >;
 
