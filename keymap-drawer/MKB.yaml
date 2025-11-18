@@ -47,10 +47,10 @@ layers:
   - LGUI
   - LALT
   - LCTRL
-  - '&double_click'
+  - '&mkp LCLK'
   - '&mkp LCLK'
   - {t: ▽, type: trans}
-  - '&triple_click'
+  - '&double_click'
   - '&mkp LCLK'
   - HOME
   - PG UP
