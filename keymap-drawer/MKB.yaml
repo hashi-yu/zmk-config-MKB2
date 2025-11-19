@@ -66,11 +66,11 @@ layers:
   - '2'
   - '3'
   - '&plusminus'
-  - Y
+  - {t: ▽, type: trans}
   - U
-  - I
-  - O
-  - P
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PERCENT
@@ -78,11 +78,11 @@ layers:
   - '5'
   - '6'
   - '0'
-  - H
-  - J
-  - K
-  - L
-  - SEMI
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&deg'
@@ -90,11 +90,11 @@ layers:
   - '8'
   - '9'
   - DOT
-  - N
-  - M
-  - COMMA
-  - DOT
-  - FSLH
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
