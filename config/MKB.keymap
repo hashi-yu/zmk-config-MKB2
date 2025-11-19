@@ -190,7 +190,7 @@
                                     &kp F                                                                                    &kp J
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&encoder>;
         };
 
         num_layer {
@@ -203,8 +203,6 @@
 &trans  &trans       &trans  &trans  &trans                                 &kp HOME   &kp PG_UP  &trans   &kp PG_DN  &kp END
                              &kp A                                                     &kp B
             >;
-
-            sensor-bindings = <&encoder>, <&inc_dec_kp PG_UP PG_DN>;
         };
 
         symbol {
@@ -218,7 +216,6 @@
             >;
 
             label = "symb";
-            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         arrow {
@@ -253,8 +250,6 @@
 &kp LEFT    &kp UP        &trans        &kp DOWN      &kp RIGHT                                       &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
                                         &kp A                                                                   &kp B
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         mouse_layer {
@@ -267,8 +262,6 @@
 &kp LEFT  &kp UP  &kp SPACE  &kp DOWN   &kp RIGHT                             &kp HOME        &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
                              &kp A                                                            &kp B
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
     };
 
