@@ -60,6 +60,13 @@
             hold-trigger-key-positions = <40 6 7 8 9 10 18 19 20 21 22 30 31 32 33 34 39>;
             label = "ARROW_LT";
         };
+
+        encoder: encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        };
     };
 
     macros {
@@ -197,7 +204,7 @@
                              &kp A                                                     &kp B
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&encoder>, <&inc_dec_kp PG_UP PG_DN>;
         };
 
         symbol {
