@@ -190,7 +190,7 @@
                                     &kp F                                                                                    &kp J
             >;
 
-            sensor-bindings = <&encoder>;
+            sensor-bindings = <&encoder &encoder>;
         };
 
         num_layer {
