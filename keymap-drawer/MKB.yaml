@@ -3,40 +3,40 @@ layers:
   Def:
   - ESC
   - Q
-  - W
-  - E
-  - R
+  - L
+  - U
+  - F
   - T
   - Y
-  - U
-  - I
-  - O
+  - W
+  - R
+  - Y
   - P
   - Meh+F
   - TAB
-  - {t: A, h: LCTRL}
-  - {t: S, h: LALT}
-  - {t: D, h: LEFT SHIFT}
-  - {t: F, h: LEFT GUI}
-  - G
-  - H
-  - {t: J, h: RIGHT GUI}
-  - {t: K, h: RIGHT SHIFT}
-  - {t: L, h: LALT}
-  - {t: SEMICOLON, h: RCTRL}
+  - {t: E, h: LCTRL}
+  - {t: I, h: LEFT ALT}
+  - {t: A, h: LSHFT}
+  - {t: O, h: LGUI}
+  - MINUS
+  - K
+  - {t: T, h: RGUI}
+  - {t: N, h: RSHFT}
+  - {t: S, h: RALT}
+  - {t: H, h: RCTRL}
   - F3
   - LSHFT
   - Z
   - X
   - C
   - V
-  - B
-  - N
-  - M
   - COMMA
-  - DOT
-  - FSLH
-  - RIGHT SHIFT
+  - G
+  - D
+  - M
+  - J
+  - B
+  - J
   - LCTRL
   - LALT
   - LGUI
