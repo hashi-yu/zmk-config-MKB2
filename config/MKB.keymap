@@ -225,6 +225,8 @@
 &trans  &trans       &trans  &trans  &trans                                 &kp HOME   &kp PG_UP  &trans  &kp PG_DN  &kp END
                              &kp A                                                     &kp B
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         arrow {
