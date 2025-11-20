@@ -204,12 +204,12 @@
         default_layer {
             label = "Def";
             bindings = <
-&kp ESC    &kp Q        &kp W       &kp E             &kp R               &kp T                &kp Y      &mkp LCLK          &kp I              &kp O       &kp P                &kp LS(LA(LC(F)))
-&kp TAB    &mt LCTRL A  &mt LALT S  &mt LEFT_SHIFT D  &mt LEFT_GUI F      &kp G                &kp H      &mt RIGHT_GUI J    &mt RIGHT_SHIFT K  &mt LALT L  &mt RCTRL SEMICOLON  &kp F3
-&kp LSHFT  &kp Z        &kp X       &kp C             &kp V               &kp B                &kp N      &kp M              &kp COMMA          &kp DOT     &kp FSLH             &kp RIGHT_SHIFT
-&kp LCTRL  &kp LALT     &kp LGUI                      &num_mouse 1 SPACE  &lt 2 BACKSPACE      &lt 4 RET  &arrow_lt 3 SPACE                     &kp LGUI    &kp LALT             &kp LCTRL
-&kp LEFT   &kp UP       &trans      &kp DOWN          &kp RIGHT                                           &kp HOME           &kp PG_UP          &trans      &kp PG_DN            &kp END
-                                    &kp F                                                                                    &kp J
+&kp ESC    &kp Q        &kp W       &kp E             &kp R               &kp T          &kp Y      &kp U              &kp I              &kp O       &kp P                &kp LS(LA(LC(F)))
+&kp TAB    &mt LCTRL A  &mt LALT S  &mt LEFT_SHIFT D  &mt LEFT_GUI F      &kp G          &kp H      &mt RIGHT_GUI J    &mt RIGHT_SHIFT K  &mt LALT L  &mt RCTRL SEMICOLON  &kp F3
+&kp LSHFT  &kp Z        &kp X       &kp C             &kp V               &kp B          &kp N      &kp M              &kp COMMA          &kp DOT     &kp FSLH             &kp RIGHT_SHIFT
+&kp LCTRL  &kp LALT     &kp LGUI                      &num_mouse 1 SPACE  &mkp LCLK      &lt 3 RET  &arrow_lt 2 SPACE                     &kp LGUI    &kp LALT             &kp LCTRL
+&kp LEFT   &kp UP       &trans      &kp DOWN          &kp RIGHT                                     &kp HOME           &kp PG_UP          &trans      &kp PG_DN            &kp END
+                                    &kp F                                                                              &kp J
             >;
 
             sensor-bindings = <&scroll_up_down &scroll_up_down>;
@@ -218,26 +218,13 @@
         num_layer {
             label = "Num";
             bindings = <
-&trans  &kp EQUAL    &kp N1  &kp N2  &kp N3  &plusminus      &kp LS(Y)      &kp U      &kp LS(I)   &kp LS(O)       &kp LS(P)      &trans
-&trans  &kp PERCENT  &kp N4  &kp N5  &kp N6  &kp N0          &kp LS(H)      &kp LS(J)  &kp LS(K)   &kp LS(L)       &kp LS(COLON)  &trans
-&trans  &deg         &kp N7  &kp N8  &kp N9  &kp DOT         &kp LS(N)      &kp LS(M)  &kp LS(LT)  &kp LS(PERIOD)  &kp LS(QMARK)  &trans
-&trans  &trans       &trans          &trans  &trans          &kp LG(SPACE)  &kp LANG1              &trans          &trans         &trans
-&trans  &trans       &trans  &trans  &trans                                 &kp HOME   &kp PG_UP   &trans          &kp PG_DN      &kp END
+&trans  &kp EQUAL    &kp N1  &kp N2  &kp N3  &plusminus      &trans         &trans     &trans     &trans  &trans     &trans
+&trans  &kp PERCENT  &kp N4  &kp N5  &kp N6  &kp N0          &trans         &trans     &trans     &trans  &trans     &trans
+&trans  &deg         &kp N7  &kp N8  &kp N9  &kp DOT         &trans         &trans     &trans     &trans  &trans     &trans
+&trans  &trans       &trans          &trans  &trans          &kp BACKSPACE  &kp LANG1             &trans  &trans     &trans
+&trans  &trans       &trans  &trans  &trans                                 &kp HOME   &kp PG_UP  &trans  &kp PG_DN  &kp END
                              &kp A                                                     &kp B
             >;
-        };
-
-        symbol {
-            bindings = <
-&trans  &kp SQT        &kp LS(COLON)  &kp SEMI      &kp LS(AT)     &trans      &trans  &trans  &trans  &uppersmall  &trans  &trans
-&trans  &kp LS(POUND)  &kp LS(AT)     &kp LS(EXCL)  &kp LS(QMARK)  &trans      &trans  &trans  &trans  &lawersmall  &trans  &trans
-&trans  &kp FSLH       &kakko3        &kakko2       &kakko1        &trans      &trans  &trans  &trans  &trans       &trans  &trans
-&trans  &trans         &trans                       &trans         &trans      &trans  &trans          &trans       &trans  &trans
-&trans  &trans         &trans         &trans        &trans                             &trans  &trans  &trans       &trans  &trans
-                                      &trans                                                   &trans
-            >;
-
-            label = "symb";
         };
 
         arrow {
@@ -245,12 +232,23 @@
 &trans    &trans  &trans  &trans    &trans          &trans             &trans  &kp HOME  &kp UP    &kp END    &kp PG_UP  &trans
 &trans    &trans  &trans  &trans    &trans          &trans             &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans
 &trans    &trans  &trans  &trans    &trans          &trans             &trans  &trans    &trans    &trans     &trans     &trans
-&trans    &trans  &trans            &kp LANGUAGE_2  &kp LA(SPACE)      &trans  &trans              &trans     &trans     &trans
+&trans    &trans  &trans            &kp LANGUAGE_2  &kp LG(SPACE)      &trans  &trans              &trans     &trans     &trans
 &kp LEFT  &kp UP  &trans  &kp DOWN  &kp RIGHT                                  &trans    &trans    &trans     &trans     &trans
                           &trans                                                         &trans
             >;
+        };
 
-            sensor-bindings = <&vertival>;
+        symbol {
+            bindings = <
+&trans  &kp SQT        &kp LS(COLON)  &kp SEMI      &kp LS(AT)     &uppersmall      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(POUND)  &kp LS(AT)     &kp LS(EXCL)  &kp LS(QMARK)  &lawersmall      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp FSLH       &kakko3        &kakko2       &kakko1        &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans                       &trans         &trans           &trans  &trans          &trans  &trans  &trans
+&trans  &trans         &trans         &trans        &trans                                  &trans  &trans  &trans  &trans  &trans
+                                      &trans                                                        &trans
+            >;
+
+            label = "symb";
         };
 
         blank {
@@ -273,18 +271,6 @@
 &trans      &trans        &trans                      &trans        &trans            &trans          &trans               &trans     &trans     &trans
 &kp LEFT    &kp UP        &trans        &kp DOWN      &kp RIGHT                                       &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
                                         &kp A                                                                   &kp B
-            >;
-        };
-
-        mouse_layer {
-            label = "Mouse";
-            bindings = <
-&trans    &trans  &trans     &trans     &trans     &trans      &trans         &trans          &trans     &trans     &trans     &trans
-&trans    &trans  &trans     &mkp RCLK  &mkp LCLK  &trans      &trans         &trans          &trans     &trans     &trans     &trans
-&trans    &trans  &trans     &trans     &trans     &trans      &trans         &trans          &trans     &trans     &trans     &trans
-&trans    &trans  &trans                &trans     &trans      &kp LG(SPACE)  &kp LANGUAGE_1             &trans     &trans     &trans
-&kp LEFT  &kp UP  &kp SPACE  &kp DOWN   &kp RIGHT                             &kp HOME        &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
-                             &kp A                                                            &kp B
             >;
         };
     };
