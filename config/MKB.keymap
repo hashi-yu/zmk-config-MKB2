@@ -191,7 +191,7 @@
                                     &kp F                                                                                    &kp J
             >;
 
-            sensor-bindings = <&encoder &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp PG_UP PG_DN>;
         };
 
         num_layer {
