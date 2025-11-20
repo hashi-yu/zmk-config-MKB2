@@ -93,7 +93,7 @@ layers:
   - Sft+N
   - Sft+M
   - Sft+LT
-  - Sft+GT
+  - Sft+PERIOD
   - Sft+QMARK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
