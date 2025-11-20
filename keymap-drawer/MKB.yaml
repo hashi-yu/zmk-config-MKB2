@@ -40,10 +40,10 @@ layers:
   - LCTRL
   - LALT
   - LGUI
-  - {t: SPACE, h: Num}
   - '&mkp LCLK'
+  - {t: BACKSPACE, h: arrow}
   - {t: RET, h: symb}
-  - {t: SPACE, h: arrow}
+  - {t: SPACE, h: symb}
   - LGUI
   - LALT
   - LCTRL
@@ -99,7 +99,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BACKSPACE
   - LANG1
@@ -159,9 +159,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LANGUAGE 2
-  - Gui+SPACE
+  - {t: Gui+SPACE, type: held}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
