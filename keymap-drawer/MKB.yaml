@@ -42,7 +42,7 @@ layers:
   - LGUI
   - {t: SPACE, h: Num}
   - {t: BACKSPACE, h: arrow}
-  - {t: BACKSPACE, h: blank}
+  - {t: RET, h: blank}
   - {t: SPACE, h: symb}
   - LGUI
   - LALT
@@ -101,7 +101,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - RET
+  - Gui+SPACE
   - LANG1
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -159,7 +159,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LANGUAGE 2
-  - {t: Gui+SPACE, type: held}
+  - {t: Alt+SPACE, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
