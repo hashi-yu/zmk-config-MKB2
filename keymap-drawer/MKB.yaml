@@ -47,11 +47,11 @@ layers:
   - LGUI
   - LALT
   - LCTRL
-  - '&mkp LCLK'
-  - '&mkp LCLK'
+  - LEFT
+  - UP
   - {t: ▽, type: trans}
-  - '&mkp LCLK'
-  - '&mkp LCLK'
+  - DOWN
+  - RIGHT
   - HOME
   - PG UP
   - {t: ▽, type: trans}
@@ -354,3 +354,7 @@ layers:
   - END
   - A
   - B
+combos:
+- p: [19, 20]
+  k: '&mkp LCLK'
+  l: [Def]
