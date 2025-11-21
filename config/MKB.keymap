@@ -212,7 +212,7 @@
                                     &kp F                                                                                &kp J
             >;
 
-            sensor-bindings = <&scroll_up_down &scroll_up_down>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         num_layer {
