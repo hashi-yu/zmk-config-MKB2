@@ -42,7 +42,7 @@ layers:
   - LGUI
   - {t: SPACE, h: Num}
   - '&mkp LCLK'
-  - {t: RET, h: symb}
+  - {t: BACKSPACE, h: symb}
   - {t: SPACE, h: arrow}
   - LGUI
   - LALT
@@ -101,7 +101,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - BACKSPACE
+  - RET
   - LANG1
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
