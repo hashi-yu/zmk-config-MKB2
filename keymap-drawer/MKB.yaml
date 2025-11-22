@@ -42,7 +42,7 @@ layers:
   - LGUI
   - {t: SPACE, h: Num}
   - '&mkp LCLK'
-  - {t: RET, h: symb}
+  - {t: BACKSPACE, h: symb}
   - {t: SPACE, h: arrow}
   - LGUI
   - LALT
@@ -126,7 +126,20 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - HOME
+  - UP
+  - PAGE UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - LEFT
+  - DOWN
   - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -137,22 +150,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - END
   - {t: ▽, type: trans}
-  - RET
-  - BACKSPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - UP
-  - DOWN
-  - {t: ▽, type: trans}
+  - PAGE DOWN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -184,7 +184,7 @@ layers:
   - SEMI
   - Sft+AT
   - '&uppersmall'
-  - {t: ▽, type: trans}
+  - F5
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
