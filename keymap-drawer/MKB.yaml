@@ -39,7 +39,7 @@ layers:
   - RIGHT SHIFT
   - LCTRL
   - LALT
-  - LGUI
+  - '&mkp RCLK'
   - {t: SPACE, h: Num}
   - '&mkp LCLK'
   - {t: BACKSPACE, h: symb}
@@ -218,7 +218,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp RCLK'
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
