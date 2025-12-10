@@ -218,7 +218,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mkp RCLK'
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
