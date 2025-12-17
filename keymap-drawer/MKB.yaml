@@ -39,7 +39,7 @@ layers:
   - RIGHT SHIFT
   - LCTRL
   - LALT
-  - '&mkp RCLK'
+  - LEFT GUI
   - {t: SPACE, h: Num}
   - '&mkp LCLK'
   - {t: BACKSPACE, h: symb}
@@ -101,7 +101,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - Gui+SPACE
+  - RET
   - LANG1
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -159,7 +159,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LANGUAGE 2
-  - Alt+SPACE
+  - '&mkp RCLK'
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
