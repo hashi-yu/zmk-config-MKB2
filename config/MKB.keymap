@@ -240,9 +240,9 @@
 
         symbol {
             bindings = <
-&trans  &kp SQT        &kp LS(COLON)  &kp SEMI      &kp LS(AT)     &uppersmall      &kp F5  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(POUND)  &kp LS(AT)     &kp LS(EXCL)  &kp LS(QMARK)  &lawersmall      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp FSLH       &kakko3        &kakko2       &kakko1        &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp SQT        &kp LS(COLON)  &kp SEMI      &kp LS(AT)     &uppersmall      &kp F5  &trans  &trans  &trans  &trans  &bt BT_CLR
+&trans  &kp LS(POUND)  &kp LS(AT)     &kp LS(EXCL)  &kp LS(QMARK)  &lawersmall      &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0
+&trans  &kp FSLH       &kakko3        &kakko2       &kakko1        &trans           &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 1
 &trans  &trans         &trans                       &trans         &trans           &trans  &trans          &trans  &trans  &trans
 &trans  &trans         &trans         &trans        &trans                                  &trans  &trans  &trans  &trans  &trans
                                       &trans                                                        &trans
