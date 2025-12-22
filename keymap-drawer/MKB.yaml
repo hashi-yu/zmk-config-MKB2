@@ -60,7 +60,7 @@ layers:
   - F
   - J
   Num:
-  - {t: ▽, type: trans}
+  - BACKSPACE
   - EQUAL
   - '1'
   - '2'
