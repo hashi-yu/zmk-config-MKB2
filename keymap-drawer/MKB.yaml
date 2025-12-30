@@ -180,7 +180,7 @@ layers:
   symb:
   - {t: ▽, type: trans}
   - SQT
-  - Sft+COLON
+  - ASTRK
   - SEMI
   - Sft+AT
   - '&uppersmall'
@@ -195,7 +195,7 @@ layers:
   - Sft+AT
   - Sft+!
   - Sft+QMARK
-  - '&lawersmall'
+  - DOLLAR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -207,7 +207,7 @@ layers:
   - '&kakko3'
   - '&kakko2'
   - '&kakko1'
-  - {t: ▽, type: trans}
+  - '&lawersmall'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
