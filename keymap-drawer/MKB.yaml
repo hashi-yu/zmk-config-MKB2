@@ -102,7 +102,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - ENTER
-  - {t: SPACE, h: MT}
+  - {t: LANGUAGE 1, h: MT}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -276,7 +276,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LANGUAGE 2
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
