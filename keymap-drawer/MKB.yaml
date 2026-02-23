@@ -21,7 +21,7 @@ layers:
   - G
   - H
   - {t: J, h: RIGHT COMMAND}
-  - {t: RIGHT SHIFT, h: K}
+  - {t: K, h: RIGHT SHIFT}
   - {t: L, h: RIGHT ALT}
   - {t: SEMICOLON, h: RCTRL}
   - F3
