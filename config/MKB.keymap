@@ -20,7 +20,7 @@
 &mt {
     quick-tap-ms = <175>;
     require-prior-idle-ms = <150>;
-    flavor = "tap-preferred";
+    flavor = "hold-preferred";
 };
 
 / {
