@@ -12,6 +12,17 @@
 #define SCROLL 4
 #define BT 5
 
+&lt {
+    quick-tap-ms = <150>;
+    flavor = "hold-preferred";
+};
+
+&mt {
+    quick-tap-ms = <175>;
+    require-prior-idle-ms = <150>;
+    flavor = "tap-preferred";
+};
+
 / {
     macros {
         deg: deg {
@@ -125,7 +136,7 @@
 &trans  &kp AMPERSAND      &kp NON_US_BACKSLASH  &kp TILDE        &kp UNDERSCORE  &trans         &trans  &trans    &kp UP    &trans     &trans  &trans
 &trans  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE      &kp EXCLAMATION  &kp QUESTION    &trans         &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
 &trans  &kakko4            &kakko3               &kakko2          &kakko1         &trans         &trans  &trans    &trans    &trans     &trans  &trans
-&trans  &trans             &trans                                 &trans          &mkp RCLK      &trans  &trans              &trans     &trans  &trans
+&trans  &trans             &trans                                 &lt 3 SPACE     &mkp RCLK      &trans  &trans              &trans     &trans  &trans
 &trans  &trans             &trans                &trans           &trans                                 &trans    &trans    &trans     &trans  &trans
                                                  &trans                                                            &trans
             >;
@@ -133,18 +144,17 @@
             label = "SYM";
         };
 
-        mouse_layer {
-            label = "Mouse";
+        symbol2 {
             bindings = <
-&trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans    &trans     &trans     &trans     &trans
-&trans    &trans  &trans     &trans    &trans     &trans      &trans  &mkp MB1  &mkp MB3   &mkp MB2   &trans     &trans
-&trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans    &trans     &trans     &trans     &trans
-&trans    &trans  &trans               &trans     &trans      &trans  &trans               &trans     &trans     &trans
-&kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                      &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
-                             &kp A                                              &kp B
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans  &trans      &trans  &trans          &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+                        &trans                                      &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            label = "SYM2";
         };
     };
 };
