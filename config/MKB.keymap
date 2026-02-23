@@ -135,12 +135,12 @@
         num_layer {
             label = "Num";
             bindings = <
-&trans    &trans  &kp N1     &kp N2    &kp N3     &kp EQUAL      &trans     &trans            &trans     &trans     &trans     &trans
-&trans    &trans  &kp N4     &kp N5    &kp N6     &kp N0         &trans     &trans            &trans     &trans     &trans     &trans
-&trans    &trans  &kp N7     &kp N8    &kp N9     &kp DOT        &trans     &trans            &trans     &trans     &trans     &trans
-&trans    &trans  &trans               &trans     &trans         &kp ENTER  &lt 2 LANGUAGE_1             &trans     &trans     &trans
-&kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                            &kp HOME          &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
-                             &trans                                                           &trans
+&trans    &trans  &kp N1                 &kp N2             &kp N3               &kp EQUAL      &trans     &trans            &trans     &trans     &trans     &trans
+&trans    &trans  &mt LEFT_ALT NUMBER_4  &mt LEFT_SHIFT N5  &mt LEFT_COMMAND N6  &kp N0         &trans     &trans            &trans     &trans     &trans     &trans
+&trans    &trans  &kp N7                 &kp N8             &kp N9               &kp DOT        &trans     &trans            &trans     &trans     &trans     &trans
+&trans    &trans  &trans                                    &trans               &trans         &kp ENTER  &lt 2 LANGUAGE_1             &trans     &trans     &trans
+&kp LEFT  &kp UP  &kp SPACE              &kp DOWN           &kp RIGHT                                      &kp HOME          &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
+                                         &trans                                                                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
