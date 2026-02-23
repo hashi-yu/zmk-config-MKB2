@@ -6,10 +6,10 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define DEF 0
-#define FUNC 1
-#define NUM 2
-#define MOUSE 3
-#define SCROLL 4
+#define NUM 1
+#define MATH 2
+#define SYM 3
+#define SYM2 4
 #define BT 5
 
 &lt {
