@@ -127,7 +127,9 @@
                                          &trans                                                                                 &trans
             >;
 
-            sensor-bindings = <&none>, <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_UP K_VOLUME_DOWN>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         num_layer {
