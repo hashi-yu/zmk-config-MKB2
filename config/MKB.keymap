@@ -217,6 +217,7 @@
             >;
 
             label = "SYM";
+            sensor-bindings = <&inc_dec_kp LG(TAB) LG(LS(TAB))>, <&inc_dec_kp PG_UP PG_DN>;
         };
 
         arrow {
