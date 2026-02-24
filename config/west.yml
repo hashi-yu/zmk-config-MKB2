@@ -12,6 +12,8 @@ manifest:
       url-base: https://github.com/kot149
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
+    - name: urob
+      url-base: https://github.com/urob
     - name: petejohanson
       url-base: https://github.com/petejohanson
   projects:
@@ -43,6 +45,9 @@ manifest:
       revision: main
     - name: zmk-driver-MLX90393
       remote: te9no
+      revision: main
+    - name: zmk-tri-state
+      remote: urob
       revision: main
   self:
     path: config

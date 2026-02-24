@@ -60,20 +60,6 @@
             label = "KAKKO4";
         };
 
-        app_next: app_next {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press &kp LGUI>, <&macro_tap &kp TAB>, <&macro_release &kp LGUI>;
-            label = "APP_NEXT";
-        };
-
-        app_prev: app_prev {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press &kp LGUI &kp LSHFT>, <&macro_tap &kp TAB>, <&macro_release &kp LGUI &kp LSHFT>;
-            label = "APP_PREV";
-        };
-
         space_key: space_key {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -142,10 +128,24 @@
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
+        app_swapper: app_swapper {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
+            ignored-key-positions = <41>;
+        };
+
+        app_swapper_prev: app_swapper_prev {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&kt LGUI>, <&kp LS(TAB)>, <&kt LGUI>;
+            ignored-key-positions = <41>;
+        };
+
         enc_app: enc_app {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&app_next>, <&app_prev>;
+            bindings = <&app_swapper>, <&app_swapper_prev>;
         };
 
         enc_cursor: enc_cursor {
