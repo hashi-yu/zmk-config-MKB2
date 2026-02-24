@@ -59,6 +59,13 @@
             bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE>;
             label = "KAKKO4";
         };
+
+        space_key: space_key {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&kp SPACE>, <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>;
+            label = "SPACE_KEY";
+        };
     };
 
     behaviors {
@@ -145,9 +152,9 @@
         num_layer {
             label = "Num";
             bindings = <
-&trans    &trans  &kp N1                      &kp N2                  &kp N3                    &kp EQUAL      &trans     &trans            &trans     &trans     &trans     &trans
-&trans    &trans  &num_mod LEFT_ALT NUMBER_4  &num_mod LEFT_SHIFT N5  &num_mod LEFT_COMMAND N6  &kp N0         &trans     &trans            &trans     &trans     &trans     &trans
-&trans    &trans  &kp N7                      &kp N8                  &kp N9                    &kp DOT        &trans     &trans            &trans     &trans     &trans     &trans
+&trans    &trans  &kp N1                      &kp N2                  &kp N3                    &kp EQUAL      &space_key Y  &space_key U  &space_key I      &space_key O    &space_key P      &trans
+&trans    &trans  &num_mod LEFT_ALT NUMBER_4  &num_mod LEFT_SHIFT N5  &num_mod LEFT_COMMAND N6  &kp N0         &space_key H  &space_key J  &space_key K      &space_key L    &space_key SEMI   &trans
+&trans    &trans  &kp N7                      &kp N8                  &kp N9                    &kp DOT        &space_key N  &space_key M  &space_key COMMA  &space_key DOT  &space_key SLASH  &trans
 &trans    &trans  &trans                                              &trans                    &trans         &kp ENTER  &lt 2 LANGUAGE_1             &trans     &trans     &trans
 &kp LEFT  &kp UP  &kp SPACE                   &kp DOWN                &kp RIGHT                                           &kp HOME          &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
                                               &trans                                                                                        &trans
