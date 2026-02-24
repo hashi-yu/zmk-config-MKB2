@@ -133,6 +133,7 @@
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
             ignored-key-positions = <41>;
+            timeout-ms = <500>;
         };
 
         app_swapper_prev: app_swapper_prev {
@@ -140,12 +141,13 @@
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp LS(TAB)>, <&kt LGUI>;
             ignored-key-positions = <41>;
+            timeout-ms = <500>;
         };
 
         enc_app: enc_app {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&app_swapper>, <&app_swapper_prev>;
+            bindings = <&app_swapper_prev>, <&app_swapper>;
         };
 
         enc_cursor: enc_cursor {
