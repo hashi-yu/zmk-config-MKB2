@@ -117,7 +117,7 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT>, <&kp DOWN>;
 
-            mods = <(MOD_LGUI|MOD_RGUI)>;
+            mods = <(MOD_LALT|MOD_RALT)>;
         };
 
         enc_ccw: enc_ccw {
@@ -125,7 +125,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT>, <&kp UP>;
 
-            mods = <(MOD_LGUI|MOD_RGUI)>;
+            mods = <(MOD_LALT|MOD_RALT)>;
         };
 
         enc_cursor: enc_cursor {
