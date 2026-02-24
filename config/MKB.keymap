@@ -116,6 +116,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp RIGHT>, <&kp DOWN>;
+
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
 
@@ -123,13 +124,17 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LEFT>, <&kp UP>;
+
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
 
         enc_cursor: enc_cursor {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&enc_cw>, <&enc_ccw>;
+            bindings = <&enc_ccw>, <&enc_cw>;
+
+            tap-ms = <6>;
+            label = "ENC_CURSOR";
         };
 
         num_mod: num_mod {
@@ -171,9 +176,7 @@
                                          &trans                                                                                 &trans
             >;
 
-            sensor-bindings =
-                <&enc_cursor>,
-                <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&enc_cursor>, <&inc_dec_kp PG_UP PG_DN>;
         };
 
         num_layer {
