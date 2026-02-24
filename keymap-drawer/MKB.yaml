@@ -66,11 +66,11 @@ layers:
   - '2'
   - '3'
   - EQUAL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&space_key Y'
+  - '&space_key U'
+  - '&space_key I'
+  - '&space_key O'
+  - '&space_key P'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -78,11 +78,11 @@ layers:
   - {t: '5', h: LEFT SHIFT}
   - {t: '6', h: LEFT COMMAND}
   - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&space_key H'
+  - '&space_key J'
+  - '&space_key K'
+  - '&space_key L'
+  - '&space_key SEMI'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -90,11 +90,11 @@ layers:
   - '8'
   - '9'
   - DOT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&space_key N'
+  - '&space_key M'
+  - '&space_key COMMA'
+  - '&space_key DOT'
+  - '&space_key SLASH'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
