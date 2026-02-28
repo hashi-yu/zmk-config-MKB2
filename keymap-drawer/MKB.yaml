@@ -133,9 +133,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '4'
-  - '5'
-  - '6'
+  - {t: '4', h: LEFT ALT}
+  - {t: '5', h: LEFT SHIFT}
+  - {t: '6', h: LEFT COMMAND}
   - '0'
   - {t: ▽, type: trans}
   - PLUS
