@@ -231,7 +231,7 @@
             bindings = <
 &trans  &trans  &kp N1                      &kp N2                        &kp N3                          &kp EQUAL      &trans  &kp PERCENT  &deg       &kp CARET     &kp DOLLAR  &trans
 &trans  &trans  &num_mod LEFT_ALT NUMBER_4  &num_mod LEFT_SHIFT NUMBER_5  &num_mod LEFT_COMMAND NUMBER_6  &kp N0         &trans  &kp PLUS     &kp MINUS  &kp ASTERISK  &kp FSLH    &trans
-&trans  &trans  &kp N7                      &kp N8                        &kp N9                          &kp DOT        &trans  &trans       &kp UNDER  &trans        &trans      &trans
+&trans  &trans  &kp N7                      &kp N8                        &kp N9                          &kp DOT        &trans  &kp AT       &kp UNDER  &trans        &trans      &trans
 &trans  &trans  &trans                                                    &trans                          &trans         &trans  &trans                  &trans        &trans      &trans
 &trans  &trans  &trans                      &trans                        &trans                                                 &trans       &trans     &trans        &trans      &trans
                                             &trans                                                                                            &trans
