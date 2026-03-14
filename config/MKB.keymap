@@ -256,12 +256,12 @@
 
         arrow {
             bindings = <
-&trans  &trans  &trans  &trans  &trans          &trans      &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans      &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans      &trans  &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans          &kp LANGUAGE_2  &trans      &trans  &trans                          &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans                              &trans          &trans          &trans           &trans  &trans
-                        &trans                                                      &trans
+&trans  &trans  &trans  &trans  &trans          &trans      &trans  &trans     &kp LC(P)  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans      &trans  &kp LC(B)  &kp LC(N)  &kp LC(F)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans      &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans          &kp LANGUAGE_2  &trans      &trans  &trans                &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans                              &trans     &trans     &trans     &trans  &trans
+                        &trans                                                 &trans
             >;
 
             label = "arr";
