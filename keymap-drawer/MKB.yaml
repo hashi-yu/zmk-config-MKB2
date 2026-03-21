@@ -209,8 +209,8 @@ layers:
   - '&kakko1'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+LEFT BRACKET
+  - Gui+RIGHT BRACKET
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
