@@ -39,12 +39,12 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - {t: SPACE, h: Num}
   - '&mkp LCLK'
   - {t: ENTER, h: SYM}
   - {t: SPACE, h: arr}
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - ''
   - LEFT
@@ -185,8 +185,8 @@ layers:
   - UNDERSCORE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+DELETE
+  - '&ctrl_fn_del'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
