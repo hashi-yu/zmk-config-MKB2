@@ -185,8 +185,8 @@ layers:
   - UNDERSCORE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+BACKSPACE
-  - '&ctrl_fn_del'
+  - Gui+DELETE
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
