@@ -102,13 +102,6 @@
 
             label = "SPACE_KEY";
         };
-
-        ctrl_fn_del: ctrl_fn_del {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(GLOBE) &kp DELETE>;
-            label = "CTRL_FN_DEL";
-        };
     };
 
     behaviors {
@@ -250,7 +243,7 @@
 
         symbol-arrow {
             bindings = <
-&trans  &kp AMPERSAND      &kp NON_US_BACKSLASH  &kp TILDE        &kp UNDERSCORE  &trans      &trans  &kp LG(BACKSPACE)     &ctrl_fn_del           &trans  &trans  &trans
+&trans  &kp AMPERSAND      &kp NON_US_BACKSLASH  &kp TILDE        &kp UNDERSCORE  &trans      &trans  &kp LG(DELETE)        &ctrl_fn_del           &trans  &trans  &trans
 &trans  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE      &kp EXCLAMATION  &kp QUESTION    &trans      &trans  &trans                &trans                 &trans  &trans  &trans
 &trans  &kakko4            &kakko3               &kakko2          &kakko1         &trans      &trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans  &trans  &trans
 &trans  &trans             &trans                                 &trans          &trans      &trans  &trans                                       &trans  &trans  &trans
