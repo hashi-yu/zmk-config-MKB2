@@ -37,9 +37,9 @@ layers:
   - DOT
   - SLASH
   - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
+  - LCTRL
+  - GLOBE
+  - DELETE
   - {t: SPACE, h: Num}
   - '&mkp LCLK'
   - {t: ENTER, h: SYM}
