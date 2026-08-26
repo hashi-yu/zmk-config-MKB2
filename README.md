@@ -1,5 +1,7 @@
 ﻿# Futhesia Moduora (MeKaBu) - フセシア・モデュオラ（メカブ）
 
+[![Build ZMK firmware](https://github.com/te9no/zmk-config-MKB2/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/te9no/zmk-config-MKB2/actions/workflows/build.yml?query=branch%3Amain)
+
 ```
                                                                                          
                                 :-:                                                      
@@ -57,7 +59,7 @@ Thrives in collaborative environments, particularly hackathons and technical con
 単体での生息よりも、共創型の環境下において最も高いパフォーマンスを発揮する。
 
 ### Current Keymap Configuration | 現在のキーマップ構成
-![MeKaBu Keymap](keymap-drawer/MKB.svg)
+![Keymap](keymap-svg/MKB.svg)
 
 ## Etymology | 語源
 The name "MeKaBu" encompasses multiple meanings:
