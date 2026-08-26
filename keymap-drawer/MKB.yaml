@@ -8,7 +8,7 @@ layers:
   - R
   - T
   - Y
-  - U
+  - BSPC
   - I
   - O
   - P
@@ -23,7 +23,7 @@ layers:
   - {t: J, h: RIGHT COMMAND}
   - {t: K, h: RIGHT SHIFT}
   - {t: L, h: RIGHT ALT}
-  - {t: SEMICOLON, h: RCTRL}
+  - {t: U, h: RCTRL}
   - F3
   - LSHFT
   - Z
@@ -59,6 +59,65 @@ layers:
   - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  Nagi:
+  - ESCAPE
+  - '&ng Q'
+  - '&ng W'
+  - '&ng E'
+  - '&ng R'
+  - '&ng T'
+  - '&ng Y'
+  - '&ng U'
+  - '&ng I'
+  - '&ng O'
+  - '&ng P'
+  - Meh+F
+  - TAB
+  - {t: '&ng A', h: LCTRL}
+  - {t: '&ng S', h: LEFT ALT}
+  - {t: '&ng D', h: LEFT SHIFT}
+  - {t: '&ng F', h: LEFT COMMAND}
+  - '&ng G'
+  - '&ng H'
+  - {t: '&ng J', h: RIGHT COMMAND}
+  - {t: '&ng K', h: RIGHT SHIFT}
+  - {t: '&ng L', h: RIGHT ALT}
+  - {t: '&ng SEMI', h: RCTRL}
+  - F3
+  - LSHFT
+  - '&ng Z'
+  - '&ng X'
+  - '&ng C'
+  - '&ng V'
+  - '&ng B'
+  - '&ng N'
+  - '&ng M'
+  - '&ng COMMA'
+  - '&ng DOT'
+  - '&ng SLASH'
+  - ''
+  - LCTRL
+  - GLOBE
+  - DELETE
+  - {t: '&ng SPACE', h: Num}
+  - '&mkp LCLK'
+  - {t: '&ng ENTER', h: SYM}
+  - {t: '&ng SPACE', h: arr}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - LEFT
+  - UP
+  - SPACE
+  - DOWN
+  - RIGHT
+  - HOME
+  - PG UP
+  - ENTER
+  - PG DN
+  - END
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Num:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -66,11 +125,11 @@ layers:
   - '2'
   - '3'
   - EQUAL
-  - '&space_key Y'
-  - '&space_key U'
-  - '&space_key I'
-  - '&space_key O'
-  - '&space_key P'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -78,11 +137,11 @@ layers:
   - {t: '5', h: LEFT SHIFT}
   - {t: '6', h: LEFT COMMAND}
   - '0'
-  - '&space_key H'
-  - '&space_key J'
-  - '&space_key K'
-  - '&space_key L'
-  - '&space_key SEMI'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -90,11 +149,11 @@ layers:
   - '8'
   - '9'
   - DOT
-  - '&space_key N'
-  - '&space_key M'
-  - '&space_key COMMA'
-  - '&space_key DOT'
-  - '&space_key SLASH'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -297,6 +356,9 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [40, 39]
-  k: LANGUAGE 2
+  k: '&ng_off'
 - p: [41, 42]
-  k: LANGUAGE 1
+  k: '&ng_on'
+- p: [16, 17]
+  k: '&ng_off'
+  l: [Nagi]
