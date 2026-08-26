@@ -5,13 +5,16 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <behaviors/naginata.dtsi>
 
 #define DEF 0
-#define NUM 1
-#define MATH 2
-#define SYM 3
-#define SYM2 4
-#define BT 5
+#define NAGI 1
+#define NUM 2
+#define NAGI_NUM 3
+#define MATH 4
+#define SYM 5
+#define ARROW 6
+#define BT 7
 
 &lt {
     quick-tap-ms = <150>;
@@ -26,6 +29,33 @@
 
 / {
     macros {
+        ng_on: ng_on {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LANGUAGE_1 &kp INTERNATIONAL_4 &to NAGI>;
+            label = "NG_ON";
+        };
+
+        ng_off: ng_off {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LANGUAGE_2 &kp INTERNATIONAL_5 &to DEF>;
+            label = "NG_OFF";
+        };
+
+        ng_space_key: ng_space_key {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&macro_press>,
+                <&ng SPACE &macro_param_1to1>,
+                <&macro_tap>,
+                <&ng MACRO_PLACEHOLDER>,
+                <&macro_release>,
+                <&ng SPACE>;
+            label = "NG_SPACE_KEY";
+        };
+
         deg: deg {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -105,6 +135,53 @@
     };
 
     behaviors {
+        ng_mt: ng_mt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NG_MT";
+            bindings = <&kp>, <&ng>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
+        };
+
+        ng_num: ng_num {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NG_NUM";
+            bindings = <&mo>, <&ng>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 11 23 35 45 43 44 42 41>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+        };
+
+        ng_lt: ng_lt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NG_LT";
+            bindings = <&mo>, <&ng>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+        };
+
+        ng_sands: ng_sands {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NG_SANDS";
+            bindings = <&mo>, <&ng>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 45 44 43 40 39 0 12 24 36 38 37>;
+        };
+
         num: num {
             compatible = "zmk,behavior-hold-tap";
             label = "NUM";
@@ -187,13 +264,28 @@
         compatible = "zmk,combos";
 
         rome {
-            bindings = <&kp LANGUAGE_2>;
+            bindings = <&ng_off>;
             key-positions = <40 39>;
         };
 
         kana {
-            bindings = <&kp LANGUAGE_1>;
+            bindings = <&ng_on>;
             key-positions = <41 42>;
+        };
+
+        naginata_off {
+            bindings = <&ng_off>;
+            key-positions = <16 17>;
+            layers = <NAGI>;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        naginata_num {
+            if-layers = <NAGI NUM>;
+            then-layer = <NAGI_NUM>;
         };
     };
 
@@ -203,12 +295,26 @@
         default_layer {
             label = "Def";
             bindings = <
-&kp ESCAPE  &kp Q        &kp W           &kp E             &kp R               &kp T          &kp Y        &kp U                &kp I              &kp O            &kp P                &kp LS(LA(LC(F)))
-&kp TAB     &mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_COMMAND F  &kp G          &kp H        &mt RIGHT_COMMAND J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RCTRL SEMICOLON  &kp F3
-&kp LSHFT   &kp Z        &kp X           &kp C             &kp V               &kp B          &kp N        &kp M                &kp COMMA          &kp DOT          &kp SLASH            &none
-&kp LCTRL   &kp GLOBE    &kp DELETE                        &num 1 SPACE        &mkp LCLK      &lt 3 ENTER  &sands 4 SPACE                          &trans           &none                &none
+&kp ESCAPE  &kp Q        &kp W           &kp E             &kp R               &kp T          &kp Y        &kp BSPC             &kp I              &kp O            &kp P          &kp LS(LA(LC(F)))
+&kp TAB     &mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_COMMAND F  &kp G          &kp H        &mt RIGHT_COMMAND J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RCTRL U     &kp F3
+&kp LSHFT   &kp Z        &kp X           &kp C             &kp V               &kp B          &kp N        &kp M                &kp COMMA          &kp DOT          &kp SLASH      &none
+&kp LCTRL   &kp GLOBE    &kp DELETE                        &num NUM SPACE      &mkp LCLK      &lt SYM ENTER  &sands ARROW SPACE                      &trans         &none       &none
 &kp LEFT    &kp UP       &kp SPACE       &kp DOWN          &kp RIGHT                                       &kp HOME             &kp PG_UP          &kp ENTER        &kp PG_DN            &kp END
                                          &trans                                                                                 &trans
+            >;
+
+            sensor-bindings = <&enc_cursor>, <&inc_dec_kp PG_UP PG_DN>;
+        };
+
+        naginata_layer {
+            label = "Nagi";
+            bindings = <
+&kp ESCAPE  &ng Q           &ng W              &ng E               &ng R                 &ng T      &ng Y           &ng U                  &ng I                &ng O              &ng P             &kp LS(LA(LC(F)))
+&kp TAB     &ng_mt LCTRL A  &ng_mt LEFT_ALT S  &ng_mt LEFT_SHIFT D  &ng_mt LEFT_COMMAND F  &ng G      &ng H           &ng_mt RIGHT_COMMAND J  &ng_mt RIGHT_SHIFT K  &ng_mt RIGHT_ALT L  &ng_mt RCTRL SEMI  &kp F3
+&kp LSHFT   &ng Z           &ng X              &ng C               &ng V                 &ng B      &ng N           &ng M                  &ng COMMA            &ng DOT            &ng SLASH         &none
+&kp LCTRL   &kp GLOBE       &kp DELETE                               &ng_num NUM SPACE     &mkp LCLK  &ng_lt SYM ENTER  &ng_sands ARROW SPACE                         &trans             &none          &none
+&kp LEFT    &kp UP          &kp SPACE          &kp DOWN             &kp RIGHT                                              &kp HOME                &kp PG_UP            &kp ENTER          &kp PG_DN       &kp END
+                                             &trans                                                                                         &trans
             >;
 
             sensor-bindings = <&enc_cursor>, <&inc_dec_kp PG_UP PG_DN>;
@@ -220,12 +326,24 @@
 &trans    &trans  &kp N1                      &kp N2                  &kp N3                    &kp EQUAL      &space_key Y  &space_key U      &space_key I      &space_key O    &space_key P      &trans
 &trans    &trans  &num_mod LEFT_ALT NUMBER_4  &num_mod LEFT_SHIFT N5  &num_mod LEFT_COMMAND N6  &kp N0         &space_key H  &space_key J      &space_key K      &space_key L    &space_key SEMI   &trans
 &trans    &trans  &kp N7                      &kp N8                  &kp N9                    &kp DOT        &space_key N  &space_key M      &space_key COMMA  &space_key DOT  &space_key SLASH  &trans
-&trans    &trans  &trans                                              &trans                    &trans         &kp ENTER     &lt 2 LANGUAGE_1                    &trans          &trans            &trans
+&trans    &trans  &trans                                              &trans                    &trans         &kp ENTER     &lt MATH LANGUAGE_1                 &trans          &trans            &trans
 &kp LEFT  &kp UP  &kp SPACE                   &kp DOWN                &kp RIGHT                                              &kp HOME          &kp PG_UP         &kp ENTER       &kp PG_DN         &kp END
                                               &trans                                                                                           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+
+        naginata_num_layer {
+            label = "NagiNum";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &ng_space_key Y  &ng_space_key U      &ng_space_key I      &ng_space_key O    &ng_space_key P      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &ng_space_key H  &ng_space_key J      &ng_space_key K      &ng_space_key L    &ng_space_key SEMI   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &ng_space_key N  &ng_space_key M      &ng_space_key COMMA  &ng_space_key DOT  &ng_space_key SLASH  &trans
+&trans  &trans  &trans                  &trans  &trans  &trans    &trans                                     &trans                &trans                &trans
+&trans  &trans  &trans  &trans  &trans                          &trans            &trans                &trans               &trans  &trans
+                        &trans                                                     &trans
+            >;
         };
 
         math {

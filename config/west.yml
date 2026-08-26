@@ -16,12 +16,17 @@ manifest:
       url-base: https://github.com/petejohanson
     - name: cormoran
       url-base: https://github.com/cormoran
+    - name: eswai
+      url-base: https://github.com/eswai
   projects:
     - name: zmk
       # remote: zmkfirmware
       remote: te9no
       revision: 2ae914a28d179fffb8fdd72080e44ef719f49973
       import: app/west.yml
+    - name: zmk-naginata
+      remote: eswai
+      revision: 6d852bf9b42d860b8a2bfbb0042dd20124c53ade
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: 8756cb7b8114069fa3c25c6f6c990f24988fceff
