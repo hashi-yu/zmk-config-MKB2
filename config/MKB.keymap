@@ -10,11 +10,10 @@
 #define DEF 0
 #define NAGI 1
 #define NUM 2
-#define NAGI_NUM 3
-#define MATH 4
-#define SYM 5
-#define ARROW 6
-#define BT 7
+#define MATH 3
+#define SYM 4
+#define ARROW 5
+#define BT 6
 
 &lt {
     quick-tap-ms = <150>;
@@ -43,18 +42,6 @@
             label = "NG_OFF";
         };
 
-        ng_space_key: ng_space_key {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_press>,
-                <&ng SPACE &macro_param_1to1>,
-                <&macro_tap>,
-                <&ng MACRO_PLACEHOLDER>,
-                <&macro_release>,
-                <&ng SPACE>;
-            label = "NG_SPACE_KEY";
-        };
 
         deg: deg {
             compatible = "zmk,behavior-macro";
@@ -119,19 +106,6 @@
             label = "APP_PREV";
         };
 
-        space_key: space_key {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_press>,
-                <&kp SPACE &macro_param_1to1>,
-                <&macro_tap>,
-                <&kp MACRO_PLACEHOLDER>,
-                <&macro_release>,
-                <&kp SPACE>;
-
-            label = "SPACE_KEY";
-        };
     };
 
     behaviors {
@@ -280,14 +254,6 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        naginata_num {
-            if-layers = <NAGI NUM>;
-            then-layer = <NAGI_NUM>;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -323,9 +289,9 @@
         num_layer {
             label = "Num";
             bindings = <
-&trans    &trans  &kp N1                      &kp N2                  &kp N3                    &kp EQUAL      &space_key Y  &space_key U      &space_key I      &space_key O    &space_key P      &trans
-&trans    &trans  &num_mod LEFT_ALT NUMBER_4  &num_mod LEFT_SHIFT N5  &num_mod LEFT_COMMAND N6  &kp N0         &space_key H  &space_key J      &space_key K      &space_key L    &space_key SEMI   &trans
-&trans    &trans  &kp N7                      &kp N8                  &kp N9                    &kp DOT        &space_key N  &space_key M      &space_key COMMA  &space_key DOT  &space_key SLASH  &trans
+&trans    &trans  &kp N1                      &kp N2                  &kp N3                    &kp EQUAL      &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &num_mod LEFT_ALT NUMBER_4  &num_mod LEFT_SHIFT N5  &num_mod LEFT_COMMAND N6  &kp N0         &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &kp N7                      &kp N8                  &kp N9                    &kp DOT        &trans  &trans  &trans  &trans  &trans  &trans
 &trans    &trans  &trans                                              &trans                    &trans         &kp ENTER     &lt MATH LANGUAGE_1                 &trans          &trans            &trans
 &kp LEFT  &kp UP  &kp SPACE                   &kp DOWN                &kp RIGHT                                              &kp HOME          &kp PG_UP         &kp ENTER       &kp PG_DN         &kp END
                                               &trans                                                                                           &trans
@@ -334,17 +300,6 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        naginata_num_layer {
-            label = "NagiNum";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &ng_space_key Y  &ng_space_key U      &ng_space_key I      &ng_space_key O    &ng_space_key P      &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &ng_space_key H  &ng_space_key J      &ng_space_key K      &ng_space_key L    &ng_space_key SEMI   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &ng_space_key N  &ng_space_key M      &ng_space_key COMMA  &ng_space_key DOT  &ng_space_key SLASH  &trans
-&trans  &trans  &trans                  &trans  &trans  &trans    &trans                                     &trans                &trans                &trans
-&trans  &trans  &trans  &trans  &trans                          &trans            &trans                &trans               &trans  &trans
-                        &trans                                                     &trans
-            >;
-        };
 
         math {
             bindings = <
