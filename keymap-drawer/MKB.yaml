@@ -37,9 +37,9 @@ layers:
   - DOT
   - SLASH
   - ''
-  - LCTRL
-  - GLOBE
-  - DELETE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: SPACE, h: Num}
   - '&mkp LCLK'
   - {t: ENTER, h: SYM}
@@ -96,9 +96,9 @@ layers:
   - '&ng DOT'
   - '&ng SLASH'
   - ''
-  - LCTRL
-  - GLOBE
-  - DELETE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: '&ng SPACE', h: Num}
   - '&mkp LCLK'
   - {t: '&ng ENTER', h: SYM}
@@ -161,7 +161,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - ENTER
-  - {t: LANGUAGE 1, h: MT}
+  - {t: '&ng_on', h: MT}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -332,10 +332,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - BT CLR ALL
-  - LANGUAGE 2
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&ng_off'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -355,10 +355,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [40, 39]
-  k: '&ng_off'
-- p: [41, 42]
+- p: [36, 37]
   k: '&ng_on'
-- p: [16, 17]
+  l: [Def]
+- p: [36, 37]
   k: '&ng_off'
   l: [Nagi]
