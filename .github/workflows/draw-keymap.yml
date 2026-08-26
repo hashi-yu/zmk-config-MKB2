@@ -1,15 +1,6 @@
 name: Draw ZMK keymaps
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - "config/*.keymap"
-      - "config/*.json"
-      - "boards/**/*.dtsi"
-      - "boards/**/*.overlay"
-      - "snippets/**/*.overlay"
-      - "keymap-drawer/config.yaml"
-      - ".github/workflows/draw-keymap.yml"
 
 jobs:
   draw-keymap-svg:

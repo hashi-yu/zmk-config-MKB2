@@ -12,17 +12,6 @@ on:
         required: false
         default: true
         type: boolean
-  schedule:
-    # Daily build health check at 05:00 JST.
-    - cron: "0 20 * * *"
-  push:
-    paths:
-      - "config/**"
-      - "boards/**"
-      - "snippets/**"
-      - "build.yaml"
-      - "zephyr/module.yml"
-      - ".github/workflows/build.yml"
 
 permissions:
   contents: write
