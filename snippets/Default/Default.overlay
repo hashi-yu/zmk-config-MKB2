@@ -9,24 +9,13 @@
                            <&mouse_runtime_input_processor &scroll_runtime_input_processor>;
 
         scroll {
-            layers = <1>;
+            layers = <2>;
             input-processors = <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>, 
                                <&zip_xy_to_scroll_mapper>, 
                                <&scroll_runtime_input_processor>;
         };
 
-        arrow {
-            layers = <2>;
-            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT|INPUT_TRANSFORM_Y_INVERT)>, 
-                               <&mouse_runtime_input_processor &scroll_runtime_input_processor>,
-                               <&zip_keybind_keys>;
-            process-next;
-        };
         
-        arrow-prevent-move {
-            layers = <2>;
-            input-processors = <&zip_xy_scaler 0 1>;
-        };
     };
 
     magnet_listener: magnet_listener {

@@ -61,48 +61,48 @@ layers:
   - {t: ▽, type: trans}
   Nagi:
   - ESCAPE
-  - '&ng Q'
-  - '&ng W'
-  - '&ng E'
-  - '&ng R'
-  - '&ng T'
-  - '&ng Y'
-  - '&ng U'
-  - '&ng I'
-  - '&ng O'
-  - '&ng P'
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
   - Meh+F
   - TAB
-  - {t: '&ng A', h: LCTRL}
-  - {t: '&ng S', h: LEFT ALT}
-  - {t: '&ng D', h: LEFT SHIFT}
-  - {t: '&ng F', h: LEFT COMMAND}
-  - '&ng G'
-  - '&ng H'
-  - {t: '&ng J', h: RIGHT COMMAND}
-  - {t: '&ng K', h: RIGHT SHIFT}
-  - {t: '&ng L', h: RIGHT ALT}
-  - {t: '&ng SEMI', h: RCTRL}
+  - {t: A, h: LCTRL}
+  - {t: S, h: LEFT ALT}
+  - {t: D, h: LEFT SHIFT}
+  - {t: F, h: LEFT COMMAND}
+  - G
+  - H
+  - {t: J, h: RIGHT COMMAND}
+  - {t: K, h: RIGHT SHIFT}
+  - {t: L, h: RIGHT ALT}
+  - {t: SEMI, h: RCTRL}
   - F3
   - LSHFT
-  - '&ng Z'
-  - '&ng X'
-  - '&ng C'
-  - '&ng V'
-  - '&ng B'
-  - '&ng N'
-  - '&ng M'
-  - '&ng COMMA'
-  - '&ng DOT'
-  - '&ng SLASH'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - COMMA
+  - DOT
+  - SLASH
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '&ng SPACE', h: Num}
+  - {t: SPACE, h: Num}
   - '&mkp LCLK'
-  - {t: '&ng ENTER', h: SYM}
-  - {t: '&ng SPACE', h: arr}
+  - {t: ENTER, h: SYM}
+  - {t: SPACE, h: arr}
   - {t: ▽, type: trans}
   - ''
   - ''

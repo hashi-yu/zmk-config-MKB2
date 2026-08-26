@@ -1,0 +1,17 @@
+description: Time-independent Naginata space and layer behavior
+
+compatible: "zmk,behavior-naginata-space"
+
+include: two_param.yaml
+
+properties:
+  bindings:
+    type: phandles
+    required: true
+  tapping-term-ms:
+    type: int
+    required: true
+  tap-trigger-key-positions:
+    type: array
+    required: true
+    description: Opposite-side positions that convert the held layer into Naginata Space

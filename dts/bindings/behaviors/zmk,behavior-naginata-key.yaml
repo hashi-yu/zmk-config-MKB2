@@ -1,0 +1,10 @@
+description: Naginata key participating in Naginata-aware hold-tap chords
+
+compatible: "zmk,behavior-naginata-key"
+
+include: one_param.yaml
+
+properties:
+  binding:
+    type: phandle
+    required: true

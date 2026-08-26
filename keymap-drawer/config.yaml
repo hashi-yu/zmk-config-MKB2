@@ -3,6 +3,39 @@ parse_config:
     '&sys_reset': Reset
     '&bootloader': Boot
     '&caps_word': Caps Word
+    '&ng_key Q': Q
+    '&ng_key W': W
+    '&ng_key E': E
+    '&ng_key R': R
+    '&ng_key T': T
+    '&ng_key Y': Y
+    '&ng_key U': U
+    '&ng_key I': I
+    '&ng_key O': O
+    '&ng_key P': P
+    '&ng_key G': G
+    '&ng_key H': H
+    '&ng_key Z': Z
+    '&ng_key X': X
+    '&ng_key C': C
+    '&ng_key V': V
+    '&ng_key B': B
+    '&ng_key N': N
+    '&ng_key M': M
+    '&ng_key COMMA': COMMA
+    '&ng_key DOT': DOT
+    '&ng_key SLASH': SLASH
+    '&ng_mt LCTRL A': {t: A, h: LCTRL}
+    '&ng_mt LEFT_ALT S': {t: S, h: LEFT ALT}
+    '&ng_mt LEFT_SHIFT D': {t: D, h: LEFT SHIFT}
+    '&ng_mt LEFT_COMMAND F': {t: F, h: LEFT COMMAND}
+    '&ng_mt RIGHT_COMMAND J': {t: J, h: RIGHT COMMAND}
+    '&ng_mt RIGHT_SHIFT K': {t: K, h: RIGHT SHIFT}
+    '&ng_mt RIGHT_ALT L': {t: L, h: RIGHT ALT}
+    '&ng_mt RCTRL SEMI': {t: SEMI, h: RCTRL}
+    '&ng_num 2 SPACE': {t: SPACE, h: Num}
+    '&ng_lt 4 ENTER': {t: ENTER, h: SYM}
+    '&ng_sands 5 SPACE': {t: SPACE, h: arr}
 
   zmk_keycode_map:
     # Symbols

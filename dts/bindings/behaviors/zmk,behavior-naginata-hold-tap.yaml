@@ -1,0 +1,17 @@
+description: Naginata-aware hold-tap behavior
+
+compatible: "zmk,behavior-naginata-hold-tap"
+
+include: two_param.yaml
+
+properties:
+  bindings:
+    type: phandles
+    required: true
+  tapping-term-ms:
+    type: int
+    required: true
+  tap-trigger-key-positions:
+    type: array
+    required: false
+    description: Key positions that force the tap binding while held

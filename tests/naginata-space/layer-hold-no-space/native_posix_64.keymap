@@ -1,0 +1,42 @@
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/kscan_mock.h>
+#include <behaviors.dtsi>
+#include <behaviors/naginata.dtsi>
+
+/ {
+    behaviors {
+        ng_space_test: ng_space_test {
+            compatible = "zmk,behavior-naginata-space";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&ng>;
+            tapping-term-ms = <100>;
+            tap-trigger-key-positions = <1>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &ng_space_test 1 SPACE  &kp J
+                &kp X                    &kp Y
+            >;
+        };
+
+        num_layer {
+            bindings = <&trans &trans &trans &trans>;
+        };
+    };
+};
+
+&kscan {
+    events = <
+        ZMK_MOCK_PRESS(0, 0, 10)
+        ZMK_MOCK_PRESS(1, 0, 50)
+        ZMK_MOCK_RELEASE(1, 0, 10)
+        ZMK_MOCK_RELEASE(0, 0, 10)
+        ZMK_MOCK_PRESS(0, 0, 150)
+        ZMK_MOCK_RELEASE(0, 0, 10)
+    >;
+};
