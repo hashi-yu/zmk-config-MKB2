@@ -8,3 +8,15 @@ properties:
   binding:
     type: phandle
     required: true
+  shortcut-binding:
+    type: phandle
+    required: true
+    description: Raw key behavior used while an HRM modifier is active
+  shortcut-key-position:
+    type: int
+    required: false
+    description: Position whose English-layer keycode differs from the Naginata keycode
+  shortcut-keycode:
+    type: int
+    required: false
+    description: English-layer keycode override for shortcut-key-position

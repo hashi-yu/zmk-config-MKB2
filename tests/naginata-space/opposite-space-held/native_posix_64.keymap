@@ -9,8 +9,10 @@
             compatible = "zmk,behavior-naginata-hold-tap";
             #binding-cells = <2>;
             bindings = <&kp>, <&ng>;
+            shortcut-binding = <&kp>;
             tapping-term-ms = <100>;
             tap-trigger-key-positions = <0>;
+            hold-trigger-key-positions = <0>;
         };
 
         ng_space_test: ng_space_test {
@@ -18,6 +20,7 @@
             #binding-cells = <2>;
             bindings = <&mo>, <&ng>;
             tapping-term-ms = <100>;
+            shortcut-binding = <&kp>;
             tap-trigger-key-positions = <1>;
         };
     };
@@ -44,5 +47,15 @@
         ZMK_MOCK_PRESS(0, 1, 150)
         ZMK_MOCK_RELEASE(0, 0, 10)
         ZMK_MOCK_RELEASE(0, 1, 10)
+
+        ZMK_MOCK_PRESS(0, 1, 100)
+        ZMK_MOCK_PRESS(0, 0, 50)
+        ZMK_MOCK_RELEASE(0, 0, 10)
+        ZMK_MOCK_RELEASE(0, 1, 10)
+
+        ZMK_MOCK_PRESS(0, 1, 100)
+        ZMK_MOCK_PRESS(0, 0, 50)
+        ZMK_MOCK_RELEASE(0, 1, 10)
+        ZMK_MOCK_RELEASE(0, 0, 10)
     >;
 };

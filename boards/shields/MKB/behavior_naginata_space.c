@@ -7,6 +7,7 @@
 #include <zmk/behavior.h>
 #include <zmk/event_manager.h>
 #include <zmk/events/position_state_changed.h>
+#include "behavior_naginata_hold_tap.h"
 
 #define NAGINATA_SPACE_MAX_ACTIVE 2
 
@@ -14,12 +15,14 @@ enum naginata_space_state {
     NAGINATA_SPACE_UNUSED,
     NAGINATA_SPACE_HOLD,
     NAGINATA_SPACE_TAP,
+    NAGINATA_SPACE_SHORTCUT,
 };
 
 struct behavior_naginata_space_config {
     int32_t tapping_term_ms;
     const char *hold_behavior_dev;
     const char *tap_behavior_dev;
+    const char *shortcut_behavior_dev;
     const int32_t *tap_trigger_key_positions;
     int32_t tap_trigger_key_positions_len;
 };
@@ -46,6 +49,23 @@ static int invoke_binding(struct active_naginata_space *active, bool tap, bool p
         .behavior_dev = tap ? active->config->tap_behavior_dev
                             : active->config->hold_behavior_dev,
         .param1 = tap ? active->tap_param : active->hold_param,
+    };
+    struct zmk_behavior_binding_event event = {
+        .position = active->position,
+        .timestamp = timestamp,
+#if IS_ENABLED(CONFIG_ZMK_SPLIT)
+        .source = active->source,
+#endif
+    };
+
+    return zmk_behavior_invoke_binding(&binding, event, pressed);
+}
+
+static int invoke_shortcut_binding(struct active_naginata_space *active, bool pressed,
+                                   int64_t timestamp) {
+    struct zmk_behavior_binding binding = {
+        .behavior_dev = active->config->shortcut_behavior_dev,
+        .param1 = active->tap_param,
     };
     struct zmk_behavior_binding_event event = {
         .position = active->position,
@@ -141,9 +161,39 @@ static int on_binding_pressed(struct zmk_behavior_binding *binding,
     active->config = dev->config;
     active->hold_committed = false;
     active->interrupted = false;
+
+    uint8_t pressed_state = naginata_hold_tap_pressed_positions(
+        active->config->tap_trigger_key_positions,
+        active->config->tap_trigger_key_positions_len, event.timestamp);
+    if (pressed_state & NAGINATA_HOLD_TAP_PRESSED_EXPIRED) {
+        int hold_err = naginata_hold_tap_resolve_hold_positions(
+            active->config->tap_trigger_key_positions,
+            active->config->tap_trigger_key_positions_len, event.timestamp);
+        active->state = NAGINATA_SPACE_SHORTCUT;
+        int shortcut_err = invoke_shortcut_binding(active, true, event.timestamp);
+        return hold_err < 0 ? hold_err : shortcut_err;
+    }
+    if (pressed_state & NAGINATA_HOLD_TAP_PRESSED_PENDING) {
+        active->state = NAGINATA_SPACE_TAP;
+        int space_err = invoke_binding(active, true, true, event.timestamp);
+        if (space_err < 0) {
+            return space_err;
+        }
+        return naginata_hold_tap_resolve_pending_positions(
+            active->config->tap_trigger_key_positions,
+            active->config->tap_trigger_key_positions_len, event.timestamp);
+    }
+    if (pressed_state & NAGINATA_HOLD_TAP_PRESSED_TAP) {
+        active->state = NAGINATA_SPACE_TAP;
+        return invoke_binding(active, true, true, event.timestamp);
+    }
+    if (pressed_state & NAGINATA_HOLD_TAP_PRESSED_HOLD) {
+        active->state = NAGINATA_SPACE_SHORTCUT;
+        return invoke_shortcut_binding(active, true, event.timestamp);
+    }
+
     active->state = NAGINATA_SPACE_HOLD;
     k_work_reschedule(&active->work, K_MSEC(active->config->tapping_term_ms));
-
     return invoke_binding(active, false, true, event.timestamp);
 }
 
@@ -159,6 +209,8 @@ static int on_binding_released(struct zmk_behavior_binding *binding,
     int err;
     if (active->state == NAGINATA_SPACE_TAP) {
         err = invoke_binding(active, true, false, event.timestamp);
+    } else if (active->state == NAGINATA_SPACE_SHORTCUT) {
+        err = invoke_shortcut_binding(active, false, event.timestamp);
     } else {
         int release_err = invoke_binding(active, false, false, event.timestamp);
         if (active->hold_committed || active->interrupted) {
@@ -240,6 +292,7 @@ static int behavior_naginata_space_init(const struct device *dev) {
         .tapping_term_ms = DT_INST_PROP(n, tapping_term_ms),                                      \
         .hold_behavior_dev = DEVICE_DT_NAME(DT_INST_PHANDLE_BY_IDX(n, bindings, 0)),               \
         .tap_behavior_dev = DEVICE_DT_NAME(DT_INST_PHANDLE_BY_IDX(n, bindings, 1)),                \
+        .shortcut_behavior_dev = DEVICE_DT_NAME(DT_INST_PHANDLE(n, shortcut_binding)),             \
         .tap_trigger_key_positions = behavior_naginata_space_trigger_positions_##n,                \
         .tap_trigger_key_positions_len = DT_INST_PROP_LEN(n, tap_trigger_key_positions),           \
     };                                                                                             \

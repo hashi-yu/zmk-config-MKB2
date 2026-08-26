@@ -11,7 +11,23 @@ properties:
   tapping-term-ms:
     type: int
     required: true
+  shortcut-binding:
+    type: phandle
+    required: true
+    description: Raw key behavior used while another HRM modifier is active
+  shortcut-key-position:
+    type: int
+    required: false
+    description: Position whose English-layer keycode differs from the Naginata tap keycode
+  shortcut-keycode:
+    type: int
+    required: false
+    description: English-layer keycode override for shortcut-key-position
   tap-trigger-key-positions:
     type: array
     required: false
     description: Key positions that force the tap binding while held
+  hold-trigger-key-positions:
+    type: array
+    required: false
+    description: Opposite-side key positions that allow the hold binding

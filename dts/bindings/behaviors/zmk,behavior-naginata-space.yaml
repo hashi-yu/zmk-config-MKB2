@@ -11,6 +11,10 @@ properties:
   tapping-term-ms:
     type: int
     required: true
+  shortcut-binding:
+    type: phandle
+    required: true
+    description: Raw key behavior used when an HRM hold is already active
   tap-trigger-key-positions:
     type: array
     required: true
