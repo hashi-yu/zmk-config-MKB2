@@ -101,6 +101,18 @@
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 45 44 43 40 39 0 12 24 36 38 37>;
         };
 
+        lang1_mt2: lang1_mt2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LANG1_MT2";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            retro-tap;
+        };
+
         num_mod: num_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "NUM_MOD";
@@ -143,7 +155,7 @@
 &trans    &trans  &kp N1     &kp N2    &kp N3     &kp EQUAL      &trans     &trans            &trans     &trans     &trans     &trans
 &trans    &trans  &kp N4     &kp N5    &kp N6     &kp N0         &trans     &trans            &trans     &trans     &trans     &trans
 &trans    &trans  &kp N7     &kp N8    &kp N9     &kp DOT        &trans     &trans            &trans     &trans     &trans     &trans
-&trans    &trans  &trans               &trans     &trans         &kp ENTER  &lt 5 LANGUAGE_1             &trans     &trans     &trans
+&trans    &trans  &trans               &trans     &trans         &kp ENTER  &lang1_mt2 5 LANGUAGE_1      &trans     &trans     &trans
 &kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                            &kp HOME          &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
                              &trans                                                           &trans
             >;
