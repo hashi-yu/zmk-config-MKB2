@@ -791,7 +791,7 @@ svg.physical-layout { font-family: ui-monospace, SFMono-Regular, Consolas, monos
 </g>
 <g class="key keypos-10 " transform="translate(810 64) rotate(0 -780 0)">
 <rect x="0" y="0" width="52" height="52" rx="6" ry="6"/>
-<text class="tap" x="26" y="26">DOLLAR</text>
+<text class="tap" x="26" y="26">TILDE</text>
 </g>
 <g class="key keypos-11 transparent" transform="translate(862 64) rotate(0 -832 0)">
 <rect x="0" y="0" width="52" height="52" rx="6" ry="6"/>
