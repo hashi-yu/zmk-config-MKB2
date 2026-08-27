@@ -140,28 +140,27 @@
         num_layer {
             label = "Num";
             bindings = <
-&trans    &trans  &kp N1     &kp N2    &kp N3     &kp EQUAL      &trans     &trans            &trans     &trans     &trans     &trans
-&trans    &trans  &kp N4     &kp N5    &kp N6     &kp N0         &trans     &trans            &trans     &trans     &trans     &trans
-&trans    &trans  &kp N7     &kp N8    &kp N9     &kp DOT        &trans     &trans            &trans     &trans     &trans     &trans
-&trans    &trans  &trans               &trans     &trans         &kp ENTER  &lt 2 LANGUAGE_1             &trans     &trans     &trans
-&kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                            &kp HOME          &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
-                             &trans                                                           &trans
+&trans    &trans  &kp N1     &kp N2    &kp N3     &kp EQUAL      &trans     &trans          &trans     &trans     &trans     &trans
+&trans    &trans  &kp N4     &kp N5    &kp N6     &kp N0         &trans     &trans          &trans     &trans     &trans     &trans
+&trans    &trans  &kp N7     &kp N8    &kp N9     &kp DOT        &trans     &trans          &trans     &trans     &trans     &trans
+&trans    &trans  &trans               &trans     &trans         &kp ENTER  &kp LANGUAGE_1             &trans     &trans     &trans
+&kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                            &kp HOME        &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
+                             &trans                                                         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        math {
+        mt2 {
+            label = "MT2";
             bindings = <
-&trans  &trans  &kp N1  &kp N2  &kp N3  &kp EQUAL      &trans  &kp PERCENT  &deg       &kp CARET     &kp DOLLAR     &trans
-&trans  &trans  &kp N4  &kp N5  &kp N6  &kp N0         &trans  &kp PLUS     &kp MINUS  &kp ASTERISK  &kp FSLH       &trans
-&trans  &trans  &kp N7  &kp N8  &kp N9  &kp DOT        &trans  &kp AT       &kp UNDER  &kp PIPE      &kp BACKSLASH  &trans
-&trans  &trans  &trans          &trans  &trans         &trans  &trans                  &trans        &trans         &trans
-&trans  &trans  &trans  &trans  &trans                         &trans       &trans     &trans        &trans         &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &kp EQUAL      &trans  &kp PERCENT  &deg       &kp CARET  &kp DOLLAR     &trans
+&trans  &trans  &kp N4  &kp N5  &kp N6  &kp N0         &trans  &kp AT       &kp UNDER  &kp PIPE   &kp BACKSLASH  &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &kp DOT        &trans  &kp PLUS     &kp MINUS  &kp ASTRK  &kp SLASH      &trans
+&trans  &trans  &trans          &trans  &trans         &trans  &trans                  &trans     &trans         &trans
+&trans  &trans  &trans  &trans  &trans                         &trans       &trans     &trans     &trans         &trans
                         &trans                                              &trans
             >;
-
-            label = "MT";
         };
 
         symbol-arrow {
@@ -189,6 +188,28 @@
             >;
 
             label = "arr";
+        };
+
+        math {
+            bindings = <
+&trans  &trans  &kp N1  &kp N2  &kp N3  &kp EQUAL      &trans  &kp PERCENT  &deg       &kp CARET     &kp DOLLAR     &trans
+&trans  &trans  &kp N4  &kp N5  &kp N6  &kp N0         &trans  &kp PLUS     &kp MINUS  &kp ASTERISK  &kp FSLH       &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &kp DOT        &trans  &kp AT       &kp UNDER  &kp PIPE      &kp BACKSLASH  &trans
+&trans  &trans  &trans          &trans  &trans         &trans  &trans                  &trans        &trans         &trans
+&trans  &trans  &trans  &trans  &trans                         &trans       &trans     &trans        &trans         &trans
+                        &trans                                              &trans
+            >;
+
+            label = "MT";
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        num-arr-mt2 {
+            if-layers = <1 4>;
+            then-layer = <2>;
         };
     };
 };
