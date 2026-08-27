@@ -755,19 +755,19 @@ svg.physical-layout { font-family: ui-monospace, SFMono-Regular, Consolas, monos
 </g>
 <g class="key keypos-1 " transform="translate(82 64) rotate(0 -52 0)">
 <rect x="0" y="0" width="52" height="52" rx="6" ry="6"/>
-<text class="tap" x="26" y="26">AMPERSAND</text>
+<text class="tap" x="26" y="26">LESS_THAN</text>
 </g>
 <g class="key keypos-2 " transform="translate(134 64) rotate(0 -104 0)">
 <rect x="0" y="0" width="52" height="52" rx="6" ry="6"/>
-<text class="tap" x="26" y="26">NON_US_BACKSLASH</text>
+<text class="tap" x="26" y="26">LEFT_BRACKET</text>
 </g>
 <g class="key keypos-3 " transform="translate(186 64) rotate(0 -156 0)">
 <rect x="0" y="0" width="52" height="52" rx="6" ry="6"/>
-<text class="tap" x="26" y="26">TILDE</text>
+<text class="tap" x="26" y="26">LEFT_BRACE</text>
 </g>
 <g class="key keypos-4 " transform="translate(238 64) rotate(0 -208 0)">
 <rect x="0" y="0" width="52" height="52" rx="6" ry="6"/>
-<text class="tap" x="26" y="26">UNDERSCORE</text>
+<text class="tap" x="26" y="26">LPAR</text>
 </g>
 <g class="key keypos-5 transparent" transform="translate(290 64) rotate(0 -260 0)">
 <rect x="0" y="0" width="52" height="52" rx="6" ry="6"/>
@@ -803,19 +803,19 @@ svg.physical-layout { font-family: ui-monospace, SFMono-Regular, Consolas, monos
 </g>
 <g class="key keypos-13 " transform="translate(82 116) rotate(0 -52 -52)">
 <rect x="0" y="0" width="52" height="52" rx="6" ry="6"/>
-<text class="tap" x="26" y="26">DOUBLE_QUOTES</text>
+<text class="tap" x="26" y="26">kakko2</text>
 </g>
 <g class="key keypos-14 " transform="translate(134 116) rotate(0 -104 -52)">
 <rect x="0" y="0" width="52" height="52" rx="6" ry="6"/>
-<text class="tap" x="26" y="26">SINGLE_QUOTE</text>
+<text class="tap" x="26" y="26">kakko3</text>
 </g>
 <g class="key keypos-15 " transform="translate(186 116) rotate(0 -156 -52)">
 <rect x="0" y="0" width="52" height="52" rx="6" ry="6"/>
-<text class="tap" x="26" y="26">EXCLAMATION</text>
+<text class="tap" x="26" y="26">kakko4</text>
 </g>
 <g class="key keypos-16 " transform="translate(238 116) rotate(0 -208 -52)">
 <rect x="0" y="0" width="52" height="52" rx="6" ry="6"/>
-<text class="tap" x="26" y="26">QUESTION</text>
+<text class="tap" x="26" y="26">kakko1</text>
 </g>
 <g class="key keypos-17 transparent" transform="translate(290 116) rotate(0 -260 -52)">
 <rect x="0" y="0" width="52" height="52" rx="6" ry="6"/>
@@ -851,19 +851,19 @@ svg.physical-layout { font-family: ui-monospace, SFMono-Regular, Consolas, monos
 </g>
 <g class="key keypos-25 " transform="translate(82 168) rotate(0 -52 -104)">
 <rect x="0" y="0" width="52" height="52" rx="6" ry="6"/>
-<text class="tap" x="26" y="26">kakko4</text>
+<text class="tap" x="26" y="26">GREATER_THAN</text>
 </g>
 <g class="key keypos-26 " transform="translate(134 168) rotate(0 -104 -104)">
 <rect x="0" y="0" width="52" height="52" rx="6" ry="6"/>
-<text class="tap" x="26" y="26">kakko3</text>
+<text class="tap" x="26" y="26">RIGHT_BRACKET</text>
 </g>
 <g class="key keypos-27 " transform="translate(186 168) rotate(0 -156 -104)">
 <rect x="0" y="0" width="52" height="52" rx="6" ry="6"/>
-<text class="tap" x="26" y="26">kakko2</text>
+<text class="tap" x="26" y="26">RIGHT_BRACE</text>
 </g>
 <g class="key keypos-28 " transform="translate(238 168) rotate(0 -208 -104)">
 <rect x="0" y="0" width="52" height="52" rx="6" ry="6"/>
-<text class="tap" x="26" y="26">kakko1</text>
+<text class="tap" x="26" y="26">RIGHT_PARENTHESIS</text>
 </g>
 <g class="key keypos-29 transparent" transform="translate(290 168) rotate(0 -260 -104)">
 <rect x="0" y="0" width="52" height="52" rx="6" ry="6"/>
