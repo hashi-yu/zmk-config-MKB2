@@ -110,6 +110,12 @@
             tapping-term-ms = <200>;
             hold-trigger-key-positions = <14 15 16>;
         };
+
+        sensor_none: sensor_none {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&none>, <&none>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -128,7 +134,7 @@
                                          &trans                                                                                 &trans
             >;
 
-            sensor-bindings = <&none>, <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&sensor_none>, <&inc_dec_kp PG_UP PG_DN>;
         };
 
         num_layer {
@@ -169,7 +175,7 @@
             >;
 
             label = "SYM";
-            sensor-bindings = <&none>, <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&sensor_none>, <&inc_dec_kp PG_UP PG_DN>;
         };
 
         arrow {
