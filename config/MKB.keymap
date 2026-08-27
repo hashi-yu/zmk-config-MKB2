@@ -190,7 +190,7 @@
 
         symbol-arrow {
             bindings = <
-&trans  &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LPAR               &trans      &trans  &kp LG(SEMI)          &kp COLON              &trans            &trans             &trans
+&trans  &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LPAR               &trans      &trans  &kp SEMI              &kp COLON              &trans            &trans             &trans
 &trans  &kakko2           &kakko3            &kakko4          &kakko1                &trans      &trans  &kp QUESTION          &kp EXCL               &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &trans
 &trans  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans      &trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans            &trans             &trans
 &trans  &trans            &trans                              &trans                 &trans      &trans  &trans                                       &trans            &trans             &trans
