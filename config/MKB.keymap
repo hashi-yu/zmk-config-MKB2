@@ -141,7 +141,7 @@
 &kp ESCAPE  &kp Q        &kp W           &kp E             &kp R               &kp T          &kp Y        &kp BACKSPACE        &kp I              &kp O            &kp P        &kp LS(LA(LC(F)))
 &kp TAB     &mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_COMMAND F  &kp G          &kp H        &mt RIGHT_COMMAND J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RCTRL U  &kp F3
 &kp LSHFT   &kp Z        &kp X           &kp C             &kp V               &kp B          &kp N        &kp M                &kp COMMA          &kp DOT          &kp SLASH    &trans
-&trans      &trans       &trans                            &to_num 1 SPACE     &mkp LCLK      &lt 3 ENTER  &to_arr 2 SPACE                         &trans           &trans       &trans
+&trans      &trans       &trans                            &to_num 1 SPACE     &mkp LCLK      &lt 4 ENTER  &to_arr 2 SPACE                         &trans           &trans       &trans
 &kp LEFT    &kp UP       &kp SPACE       &kp DOWN          &kp RIGHT                                       &kp HOME             &kp PG_UP          &kp ENTER        &kp PG_DN    &kp END
                                          &trans                                                                                 &trans
             >;
@@ -155,7 +155,7 @@
 &trans    &trans  &kp N1     &kp N2    &kp N3     &kp EQUAL      &trans     &trans                   &trans     &trans     &trans     &trans
 &trans    &trans  &kp N4     &kp N5    &kp N6     &kp N0         &trans     &trans                   &trans     &trans     &trans     &trans
 &trans    &trans  &kp N7     &kp N8    &kp N9     &kp DOT        &trans     &trans                   &trans     &trans     &trans     &trans
-&trans    &trans  &trans               &trans     &trans         &kp ENTER  &lang1_mt2 5 LANGUAGE_1             &trans     &trans     &trans
+&trans    &trans  &trans               &trans     &trans         &kp ENTER  &lang1_mt2 3 LANGUAGE_1             &trans     &trans     &trans
 &kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                            &kp HOME                 &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
                              &trans                                                                  &trans
             >;
@@ -176,33 +176,6 @@
             label = "arr";
         };
 
-        symbol-arrow {
-            bindings = <
-&trans  &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LPAR               &trans      &trans  &kp LG(DELETE)        &trans                 &trans  &trans  &trans
-&trans  &kakko2           &kakko3            &kakko4          &kakko1                &trans      &trans  &trans                &trans                 &trans  &trans  &trans
-&trans  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans      &trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans  &trans  &trans
-&trans  &trans            &trans                              &trans                 &trans      &trans  &trans                                       &trans  &trans  &trans
-&trans  &trans            &trans             &trans           &trans                                     &trans                &trans                 &trans  &trans  &trans
-                                             &trans                                                                            &trans
-            >;
-
-            label = "SYM";
-            sensor-bindings = <&sensor_none>, <&inc_dec_kp PG_UP PG_DN>;
-        };
-
-        math {
-            bindings = <
-&trans  &trans  &kp N1  &kp N2  &kp N3  &kp EQUAL      &trans  &kp PERCENT  &deg       &kp CARET     &kp DOLLAR     &trans
-&trans  &trans  &kp N4  &kp N5  &kp N6  &kp N0         &trans  &kp PLUS     &kp MINUS  &kp ASTERISK  &kp FSLH       &trans
-&trans  &trans  &kp N7  &kp N8  &kp N9  &kp DOT        &trans  &kp AT       &kp UNDER  &kp PIPE      &kp BACKSLASH  &trans
-&trans  &trans  &trans          &trans  &trans         &trans  &trans                  &trans        &trans         &trans
-&trans  &trans  &trans  &trans  &trans                         &trans       &trans     &trans        &trans         &trans
-                        &trans                                              &trans
-            >;
-
-            label = "MT";
-        };
-
         mt2 {
             label = "MT2";
             bindings = <
@@ -213,6 +186,20 @@
 &trans  &trans  &trans  &trans  &trans                         &trans       &trans     &trans     &trans         &trans
                         &trans                                              &trans
             >;
+        };
+
+        symbol-arrow {
+            bindings = <
+&trans  &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LPAR               &trans      &trans  &kp LG(SEMI)          &kp COLON              &trans            &trans             &trans
+&trans  &kakko2           &kakko3            &kakko4          &kakko1                &trans      &trans  &kp QUESTION          &kp EXCL               &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &trans
+&trans  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans      &trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans            &trans             &trans
+&trans  &trans            &trans                              &trans                 &trans      &trans  &trans                                       &trans            &trans             &trans
+&trans  &trans            &trans             &trans           &trans                                     &trans                &trans                 &trans            &trans             &trans
+                                             &trans                                                                            &trans
+            >;
+
+            label = "SYM";
+            sensor-bindings = <&sensor_none>, <&inc_dec_kp PG_UP PG_DN>;
         };
     };
 
